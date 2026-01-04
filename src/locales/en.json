@@ -1,0 +1,73 @@
+{
+  "intro": {
+    "title": "Massage - Dominik Pokorný",
+    "subtitle": "Relief from stress. At your home. Professionally.",
+    "cta": "Book now"
+  },
+  "gallery": {
+    "title": "Gallery"
+  },
+  "description": {
+    "title": "About me",
+    "text": "I’m Dominik and I work as a mobile masseur — I come to your home and give you a well-deserved relaxation and relief from everyday stress after a long day at work. If you have a long-term issue or a tense spot that causes you problems or limits your movement, we can work together to release it and help prevent it from returning."
+  },
+  "pricing": {
+    "title": "Pricing",
+    "tiers": {
+      "basic": {
+        "title": "Short session",
+        "price": 1000,
+        "duration": "60 minutes"
+      },
+      "pro": {
+        "title": "Standard session",
+
+        "price": 1400,
+        "duration": "90 minutes"
+      },
+      "button": "Select",
+      "form": {
+        "title": "Book {tier}",
+        "name": "Name",
+        "email": "Email",
+        "phone": "Phone",
+        "message": "Note",
+        "submit": "Submit",
+        "success": "Thank you — we will contact you soon.",
+        "healthQuestions": [
+          "Fever or infectious disease",
+          "Open wounds or skin infection",
+          "Recent surgery or fracture",
+          "Severe cardiovascular problems",
+          "Pregnancy (consult first)"
+        ],
+        "cannotProceed": "Based on your answers, you cannot undergo the massage at this time.",
+        "continue": "Continue to booking",
+        "healthInfo": "Please confirm if you have any of the following conditions — checking any will prevent the treatment.",
+        "confirmations": [
+          "I confirm I am not currently taking blood-thinning medication.",
+          "I confirm I do not have an acute fever or infection.",
+          "I confirm I understand the risks and consent to the treatment."
+        ],
+        "confirmError": "Please confirm all items before continuing."
+       }
+     }
+   },
+  "booking": {
+    "back": "Back",
+    "title": "Book an appointment",
+    "checkTitle": "Can I undergo the massage?",
+    "infoParagraph": "Massage can be performed only under certain conditions; if you have health issues, consult a doctor to confirm it is safe.",
+    "confirmationIntro": "Please confirm all of the following before proceeding:"
+  },
+  "contact": {
+    "title": "Contact",
+    "text": "If you have any further questions, feel free to contact me.",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone"
+  },
+  "footer": {
+    "copyright": "© {year} Dominik",
+    "credit": "Made with ❤️"
+  }
+}

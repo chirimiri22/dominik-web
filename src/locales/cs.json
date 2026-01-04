@@ -1,0 +1,73 @@
+{
+  "intro": {
+    "title": "Masáže - Dominik Pokorný",
+    "subtitle": "Úleva od stresu. U vás doma. Profesionálně.",
+    "cta": "Objednat se"
+  },
+  "gallery": {
+    "title": "Galerie"
+  },
+  "description": {
+    "title": "O mně",
+    "text": "Jsem Domíšek a jsem mobilní masér - tj. dojedu k vám domů a udělám vám po dlouhém dni v práci zasloužený relax a uvolnění od každodenních stresů. Pokud Vás něco trápí dlouhodobě a máte nějaké zatuhlé místo, které Vám komplikuje život nebo omezuje Váš pohyb, můžeme ho společně rozvolnit a postarat se o to, aby se to znovu neopakovalo :-) "
+  },
+  "pricing": {
+    "title": "Ceník",
+    "tiers": {
+      "basic": {
+        "title": "Zkrácená",
+        "price": 1000,
+        "duration": "60 minut"
+      },
+      "pro": {
+        "title": "Standardní",
+
+        "price": 1400,
+        "duration": "90 minut"
+      },
+      "button": "Vybrat",
+      "form": {
+        "title": "Objednat {tier}",
+        "name": "Jméno",
+        "email": "Email",
+        "phone": "Telefon",
+        "message": "Poznámka",
+        "submit": "Odeslat",
+        "success": "Děkujeme — brzy vás kontaktujeme.",
+        "healthQuestions": [
+          "Horečka nebo infekční onemocnění",
+          "Otevřené rány nebo kožní infekce",
+          "Nedávná operace nebo zlomenina",
+          "Závažné kardiovaskulární problémy",
+          "Těhotenství (nejprve konzultujte)"
+        ],
+        "cannotProceed": "Na základě vašich odpovědí nemůžete v tuto chvíli podstoupit masáž.",
+        "continue": "Pokračovat k rezervaci",
+        "healthInfo": "Potvrďte prosím, zda máte některý z následujících stavů — zaškrtnutí kterékoliv možnosti zabraňuje ošetření.",
+        "confirmations": [
+          "Potvrzuji, že aktuálně neužívám léky ředící krev.",
+          "Potvrzuji, že nemám akutní horečku nebo infekci.",
+          "Potvrzuji, že rozumím rizikům a souhlasím s ošetřením."
+        ],
+        "confirmError": "Před pokračováním prosím potvrďte všechny položky."
+       }
+     }
+   },
+  "booking": {
+    "back": "Zpět",
+    "title": "Objednání termínu",
+    "checkTitle": "Mohu podstoupit masáž?",
+    "infoParagraph": "Masáž lze provádět pouze za určitých podmínek; pokud máte zdravotní potíže, poraďte se s lékařem, zda je to bezpečné.",
+    "confirmationIntro": "Před pokračováním prosím potvrďte všechny položky:"
+  },
+  "contact": {
+    "title": "Kontakt",
+    "text": "V případě jakýchkoliv dalších dotazů se mi neváhejte ozvat. :)",
+    "emailLabel": "Email",
+    "phoneLabel": "Telefon"
+  },
+  "footer": {
+    "copyright": "© {year} Dominik",
+    "credit": "Vytvořeno s ❤️"
+  }
+}
