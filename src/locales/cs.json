@@ -1,31 +1,90 @@
 {
   "intro": {
-    "title": "Masáže - Dominik Pokorný",
-    "subtitle": "Úleva od stresu. U vás doma. Profesionálně.",
-    "cta": "Objednat se"
+    "badge": "Mobilní masér",
+    "title": "Masáže Pokorný",
+    "subtitle": [
+      "Máte touhu zažít skutečný relax a úlevu?",
+      "Na chvilku vypnout všechno kolem a jenom existovat?"
+    ],
+    "cta": "Najít termín",
+    "note": "Přijedu za vámi domů a vytvořím prostor pro skutečné uvolnění."
   },
   "gallery": {
-    "title": "Galerie"
+    "tag": "Portfolio",
+    "title": "Galerie",
+    "heading": "Fotografie, které zachycují atmosféru léčby",
+    "subtitle": "Vybrané momenty z masáží a klidného domácího prostředí.",
+    "videoTag": "Video",
+    "videoTitle": "Video z masáže",
+    "videoCaption": "Ukázka průběhu masáže ve formátu Shorts.",
+    "items": [
+      "Brandové pozadí a atmosféra relaxace",
+      "Portrét Dominika Pokorného",
+      "Příprava masážního prostoru",
+      "Relaxace a klid při ošetření",
+      "Pohodlné zázemí pro masáž",
+      "Příprava pomůcek a prostoru",
+      "Mobilní masáž v praxi",
+      "Detail ošetření během masáže",
+      "Příjemná atmosféra u klienta doma",
+      "Mobilní servis s plným vybavením",
+      "Ukázkový záběr z masáže"
+    ]
   },
   "description": {
     "title": "O mně",
-    "text": "Jsem Domíšek a jsem mobilní masér - tj. dojedu k vám domů a udělám vám po dlouhém dni v práci zasloužený relax a uvolnění od každodenních stresů. Pokud Vás něco trápí dlouhodobě a máte nějaké zatuhlé místo, které Vám komplikuje život nebo omezuje Váš pohyb, můžeme ho společně rozvolnit a postarat se o to, aby se to znovu neopakovalo :-) "
+    "heading": "Jmenuji se Dominik Pokorný",
+    "valuesTitle": "Jak pracuji?",
+    "imageAlt": "Portrét Dominika Pokorného",
+    "paragraphs": [
+      "Jsem osobní masér pro muže, kuchař a sportovec.",
+      "Dobře vím, jaké to je, když člověk celé týdny maká, řeší životní starosti a únava i stres se jen hromadí.",
+      "Právě proto jsem začal masírovat a vytvářet lidem bezpečný prostor, kde se můžou zastavit a opravdu žít.",
+      "Pomáhám vrátit tělu lehkost, radost z pohybu a hlavně klid na duši.",
+      "Protože každý z nás si zaslouží vypustit nahromaděný stres i vnitřní napětí a zažít skutečné uvolnění."
+    ],
+    "points": [
+      "Jedu na kvalitu, ne na kvantitu — maximálně dva klienti za den",
+      "Přijedu přímo k vám domů, bez cestování a hledání parkování",
+      "Péče je vždy podle domluvy, vašich hranic a aktuálního stavu"
+    ],
+    "text": "Jmenuji se Dominik Pokorný. Jsem osobní masér pro muže a pomáhám lidem vrátit tělu lehkost, pohyb a klid."
   },
   "pricing": {
     "title": "Ceník",
+    "heading": "Finská masáž a péče podle vašich potřeb",
+    "subtitle": "Tradiční finská masáž podle intenzity, kterou máte rádi — jemně relaxační i pořádně tvrdá.",
+    "services": [
+      {
+        "title": "Finská masáž",
+        "paragraphs": [
+          "Tradiční finská masáž podle intenzity, kterou máte rádi.",
+          "Může být velmi jemná a relaxační, nebo pořádně tvrdá. Vše podle toho, jak chcete zrovna vy."
+        ]
+      },
+      {
+        "title": "Trigger pointy",
+        "paragraphs": [
+          "Součástí každé masáže je i pohmatové vyšetření masírovaných částí těla, abych našel případně zaseklé svaly vhodné pro tlakové ošetření.",
+          "Rozvolňování těchto bodů je krátkodobě intenzivní, ale dlouhodobě přináší výraznou úlevu od bolesti i lepší pohyblivost.",
+          "Vždy probíhá pouze po domluvě s vámi a v souladu s vaším přáním."
+        ]
+      }
+    ],
     "tiers": {
       "basic": {
-        "title": "Zkrácená",
+        "title": "Finská masáž (60 min)",
         "price": 1000,
         "duration": "60 minut"
       },
       "pro": {
-        "title": "Standardní",
+        "title": "Finská masáž (90 min)",
 
         "price": 1400,
         "duration": "90 minut"
       },
       "button": "Vybrat",
+      "selected": "Vybráno",
       "form": {
         "title": "Objednat {tier}",
         "name": "Jméno",
@@ -62,9 +121,80 @@
   },
   "contact": {
     "title": "Kontakt",
+    "heading": "Spojte se se mnou",
     "text": "V případě jakýchkoliv dalších dotazů se mi neváhejte ozvat. :)",
     "emailLabel": "Email",
     "phoneLabel": "Telefon"
+  },
+  "nav": {
+    "intro": "Úvod",
+    "gallery": "Galerie",
+    "description": "O mně",
+    "pricing": "Ceník",
+    "contact": "Kontakt",
+    "faq": "FAQ",
+    "testimonials": "Reference"
+  },
+  "faq": {
+    "title": "FAQ",
+    "heading": "Často kladené dotazy",
+    "subtitle": "Vše podstatné před rezervací na jednom místě.",
+    "items": [
+      {
+        "question": "Musím se na masáž nějak připravit?",
+        "answer": [
+          "Jediné tři věci, co jsou potřeba: vyplnit pravdivě dotazník před registrací termínu, minimálně hodinu před masáží nejíst nic těžkého a naplánovat si další den více odpočinkově.",
+          "Žádná jiná zvláštní příprava z vaší strany není potřeba, vše ostatní zařídím já."
+        ]
+      },
+      {
+        "question": "Musím být u masáže nahý?",
+        "answer": [
+          "Respektuji hranice klientů a zachovávám maximální diskrétnost intimity i privátních partií.",
+          "Běžným standardem je spodní prádlo, se kterým se manipuluje přes čisté prostěradlo — to, co se zrovna nemasíruje, je diskrétně zakryté."
+        ]
+      },
+      {
+        "question": "Masírujete i ženy?",
+        "answer": "Z osobních důvodů mám klientelu nastavenou výhradně na muže."
+      },
+      {
+        "question": "Bolí to?",
+        "answer": [
+          "Záleží na domluvě a vašich očekáváních.",
+          "Pokud chcete jemnou relaxační masáž, bolet to nebude. Pokud chcete intenzivnější hloubkovou práci nebo rozvolnění zatuhlých míst, může to být výraznější, ale dlouhodobě to tělu velmi pomáhá."
+        ]
+      },
+      {
+        "question": "Jak to probíhá?",
+        "answer": [
+          "Přijedu k vám domů (nebo do vašeho prostředí), přivezu vše potřebné a vytvořím zónu klidu přímo tam, kde se běžně pohybujete.",
+          "Součástí vybavení je vyhřívaná podložka, nahřívač oleje, vonné svíčky i relaxační čaj.",
+          "Po krátké domluvě proběhne masáž, potom vše sbalím a vy můžete pokračovat v odpočinku. Následující den doporučuji klidnější režim bez náročné fyzické zátěže."
+        ]
+      },
+      {
+        "question": "Proč si objednat zrovna moje služby?",
+        "answer": "Protože jedu na kvalitu, ne na kvantitu. Můj limit jsou dva klienti denně, abych mohl každému věnovat maximum péče — navíc vše proběhne u vás doma bez zbytečného dojíždění."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Reference",
+    "heading": "Co o masáži říkají klienti",
+    "subtitle": "Reálné zkušenosti klientů po intenzivní i relaxační péči.",
+    "items": [
+      {
+        "quote": "Masáž byla opravdu hluboká a intenzivní, ale zároveň velmi profesionální. Hned po ní jsem cítil, že je tělo rovnější, lehčí a plné energie. A co bylo ještě lepší — s odstupem několika dní přišlo příjemné uvolnění, které vydrželo. Určitě doporučuji.",
+        "name": "Richard K.",
+        "role": "Klient"
+      },
+      {
+        "quote": "Dominik má velmi profesionální a osobitý přístup. Měl jsem extrémně ztuhlé svaly kolem páteře kvůli práci a skoro dennímu gymu. Po důkladné a pečlivé masáži přišla obrovská úleva. Byl precizní a trefil přesně místa, která potřebovala uvolnit. Maximální spokojenost.",
+        "name": "Aleš P.",
+        "role": "Klient"
+      }
+    ]
   },
   "footer": {
     "copyright": "© {year} Dominik",

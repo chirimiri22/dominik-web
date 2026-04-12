@@ -2,6 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-/* small project overrides */
-body { font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; }
+@layer base {
+  html {
+	@apply scroll-smooth;
+  }
+
+  body {
+	@apply bg-sand-50 text-ink antialiased;
+  }
+
+  ::selection {
+	@apply bg-clay-500 text-white;
+  }
+
+  h1,
+  h2,
+  h3 {
+	@apply tracking-tight;
+  }
+}
 

@@ -1,31 +1,90 @@
 {
   "intro": {
-    "title": "Massage - Dominik Pokorný",
-    "subtitle": "Relief from stress. At your home. Professionally.",
-    "cta": "Book now"
+    "badge": "Mobile masseur",
+    "title": "Massage 1128 xxx Pokorny Relax",
+    "subtitle": [
+      "Are you a working person?",
+      "Do you want to experience real relaxation and relief?",
+      "To switch everything off for a moment and simply exist?"
+    ],
+    "cta": "Find a time",
+    "note": "I come to your home and create a space for real relaxation."
   },
   "gallery": {
-    "title": "Gallery"
+    "tag": "Portfolio",
+    "title": "Gallery",
+    "heading": "Photos that capture the atmosphere of the treatment",
+    "subtitle": "Selected moments from home visits and calm, comfortable settings.",
+    "videoTag": "Video",
+    "videoTitle": "Massage video",
+    "videoCaption": "A short preview of how the session looks.",
+    "items": [
+      "Brand background and relaxed atmosphere",
+      "Portrait of Dominik Pokorny",
+      "Preparing the massage space",
+      "Relaxation and calm during treatment",
+      "Comfortable setup for massage",
+      "Preparing the tools and space",
+      "Mobile massage in action",
+      "A treatment detail during massage",
+      "Pleasant atmosphere at the client’s home",
+      "Mobile service with full equipment",
+      "Sample shot from the massage"
+    ]
   },
   "description": {
     "title": "About me",
-    "text": "I’m Dominik and I work as a mobile masseur — I come to your home and give you a well-deserved relaxation and relief from everyday stress after a long day at work. If you have a long-term issue or a tense spot that causes you problems or limits your movement, we can work together to release it and help prevent it from returning."
+    "heading": "My name is Dominik Pokorny",
+    "valuesTitle": "Why I do this",
+    "imageAlt": "Portrait of Dominik Pokorny",
+    "paragraphs": [
+      "I am a personal masseur for men, a chef, and an athlete.",
+      "I know what it feels like when someone works hard for weeks, deals with life stress, and fatigue keeps building up.",
+      "That is exactly why I started massaging and creating a safe space where people can pause and truly breathe.",
+      "I help bring back lightness to the body, joy of movement, and most importantly peace of mind.",
+      "Because everyone needs to release accumulated stress and inner tension and feel real relief."
+    ],
+    "points": [
+      "I focus on quality, not quantity — maximum two clients per day",
+      "I come directly to your home, no commuting or parking stress",
+      "Every treatment is adjusted to your needs, boundaries, and current condition"
+    ],
+    "text": "My name is Dominik Pokorny. I am a personal masseur for men and I help people restore lightness, movement, and calm."
   },
   "pricing": {
     "title": "Pricing",
+    "heading": "Finnish massage and care based on your needs",
+    "subtitle": "Traditional Finnish massage in the intensity you prefer — gentle relaxation or deep pressure.",
+    "services": [
+      {
+        "title": "Finnish massage",
+        "paragraphs": [
+          "Traditional Finnish massage adjusted to the intensity you prefer.",
+          "It can be very gentle and relaxing, or properly deep and strong. Always based on what you want right now."
+        ]
+      },
+      {
+        "title": "Trigger points",
+        "paragraphs": [
+          "Every massage also includes palpation of treated areas to identify blocked muscles that may benefit from pressure treatment.",
+          "This release work can be intense in the short term, but it often brings significant long-term pain relief and restores mobility.",
+          "Trigger point release is always done only after communication with you and in line with your preference."
+        ]
+      }
+    ],
     "tiers": {
       "basic": {
-        "title": "Short session",
+        "title": "Finnish massage (60 min)",
         "price": 1000,
         "duration": "60 minutes"
       },
       "pro": {
-        "title": "Standard session",
-
+        "title": "Finnish massage (90 min)",
         "price": 1400,
         "duration": "90 minutes"
       },
       "button": "Select",
+      "selected": "Selected",
       "form": {
         "title": "Book {tier}",
         "name": "Name",
@@ -50,9 +109,9 @@
           "I confirm I understand the risks and consent to the treatment."
         ],
         "confirmError": "Please confirm all items before continuing."
-       }
-     }
-   },
+      }
+    }
+  },
   "booking": {
     "back": "Back",
     "title": "Book an appointment",
@@ -62,9 +121,80 @@
   },
   "contact": {
     "title": "Contact",
+    "heading": "Get in touch",
     "text": "If you have any further questions, feel free to contact me.",
     "emailLabel": "Email",
     "phoneLabel": "Phone"
+  },
+  "nav": {
+    "intro": "Home",
+    "gallery": "Gallery",
+    "description": "About",
+    "pricing": "Pricing",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "testimonials": "Testimonials"
+  },
+  "faq": {
+    "title": "FAQ",
+    "heading": "Frequently asked questions",
+    "subtitle": "Everything important before booking in one place.",
+    "items": [
+      {
+        "question": "Do I need to prepare for the massage?",
+        "answer": [
+          "Only three things are needed: fill in the questionnaire honestly before choosing a time, avoid heavy food at least one hour before massage, and plan the next day to be less physically demanding.",
+          "No other special preparation is required from your side, I take care of the rest."
+        ]
+      },
+      {
+        "question": "Do I have to be naked during massage?",
+        "answer": [
+          "I respect client boundaries and maintain maximum discretion regarding intimacy and private areas.",
+          "The usual standard is wearing underwear, with clean sheet coverage so parts not being treated stay discreetly covered."
+        ]
+      },
+      {
+        "question": "Do you massage women as well?",
+        "answer": "For personal reasons, I currently work exclusively with male clients."
+      },
+      {
+        "question": "Does it hurt?",
+        "answer": [
+          "It depends on your preference and expectations.",
+          "If you want a light relaxation massage, it should not hurt. If you prefer deeper work or releasing tight spots, it can be more intense, but it often helps the body significantly in the long term."
+        ]
+      },
+      {
+        "question": "How does it work?",
+        "answer": [
+          "I come to your home (or your own environment), bring all equipment, and create a calm recovery zone right where you already are.",
+          "This includes a heated table pad, oil warmer, scented candles, and relaxing tea.",
+          "After a short consultation we start the massage, and once finished I pack everything and you can continue resting. I strongly recommend a lighter schedule on the following day."
+        ]
+      },
+      {
+        "question": "Why choose my services?",
+        "answer": "Because I focus on quality, not quantity. I work with a maximum of two clients per day so I can give each person full attention, and everything happens at your home without unnecessary travel."
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Testimonials",
+    "heading": "What clients say about the massage",
+    "subtitle": "Real experiences after intensive and relaxation-focused treatment.",
+    "items": [
+      {
+        "quote": "The massage was truly deep and intense, yet very professional. Right after it I felt my body was lighter, straighter, and full of energy. And even better — a few days later there was a lasting, pleasant release. I definitely recommend it.",
+        "name": "Richard K.",
+        "role": "Client"
+      },
+      {
+        "quote": "Dominik has a very professional and personal approach. I had extremely stiff muscles around my spine due to work and frequent gym training. After a thorough and careful massage, the relief was huge. He was precise and targeted exactly the areas that needed release. Maximum satisfaction.",
+        "name": "Ales P.",
+        "role": "Client"
+      }
+    ]
   },
   "footer": {
     "copyright": "© {year} Dominik",
