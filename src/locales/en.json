@@ -55,6 +55,8 @@
     "title": "Pricing",
     "heading": "Finnish massage and care based on your needs",
     "subtitle": "Traditional Finnish massage in the intensity you prefer — gentle relaxation or deep pressure.",
+    "servicesSubtitle": "What I offer",
+    "variantsSubtitle": "Available options",
     "services": [
       {
         "title": "Finnish massage",
@@ -75,13 +77,17 @@
     "tiers": {
       "basic": {
         "title": "Finnish massage (60 min)",
+        "shortTitle": "Short",
         "price": 1000,
-        "duration": "60 minutes"
+        "duration": "60 minutes",
+        "advantage": "Quick relief when your day is time-constrained."
       },
       "pro": {
         "title": "Finnish massage (90 min)",
+        "shortTitle": "Standard",
         "price": 1400,
-        "duration": "90 minutes"
+        "duration": "90 minutes",
+        "advantage": "More time for deeper work and longer-lasting relief."
       },
       "button": "Select",
       "selected": "Selected",
@@ -115,6 +121,7 @@
   "booking": {
     "back": "Back",
     "title": "Book an appointment",
+    "hideTerm": "Hide details",
     "checkTitle": "Can I undergo the massage?",
     "infoParagraph": "Massage can be performed only under certain conditions; if you have health issues, consult a doctor to confirm it is safe.",
     "confirmationIntro": "Please confirm all of the following before proceeding:"

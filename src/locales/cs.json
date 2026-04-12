@@ -54,6 +54,8 @@
     "title": "Ceník",
     "heading": "Finská masáž a péče podle vašich potřeb",
     "subtitle": "Tradiční finská masáž podle intenzity, kterou máte rádi — jemně relaxační i pořádně tvrdá.",
+    "servicesSubtitle": "Nabízím",
+    "variantsSubtitle": "Možné varianty",
     "services": [
       {
         "title": "Finská masáž",
@@ -63,7 +65,7 @@
         ]
       },
       {
-        "title": "Trigger pointy",
+        "title": "Rozvolňování trigger pointů",
         "paragraphs": [
           "Součástí každé masáže je i pohmatové vyšetření masírovaných částí těla, abych našel případně zaseklé svaly vhodné pro tlakové ošetření.",
           "Rozvolňování těchto bodů je krátkodobě intenzivní, ale dlouhodobě přináší výraznou úlevu od bolesti i lepší pohyblivost.",
@@ -73,15 +75,18 @@
     ],
     "tiers": {
       "basic": {
-        "title": "Finská masáž (60 min)",
+        "title": "Zkrácená masáž",
+        "shortTitle": "Zkrácená",
         "price": 1000,
-        "duration": "60 minut"
+        "duration": "60 minut",
+        "advantage": "Rychlé uvolnění při časově náročném dni."
       },
       "pro": {
-        "title": "Finská masáž (90 min)",
-
+        "title": "Standartní masáž",
+        "shortTitle": "Standardní",
         "price": 1400,
-        "duration": "90 minut"
+        "duration": "90 minut",
+        "advantage": "Více času na hlubší práci a dlouhodobější úlevu."
       },
       "button": "Vybrat",
       "selected": "Vybráno",
@@ -115,6 +120,7 @@
   "booking": {
     "back": "Zpět",
     "title": "Objednání termínu",
+    "hideTerm": "Skrýt detaily",
     "checkTitle": "Mohu podstoupit masáž?",
     "infoParagraph": "Masáž lze provádět pouze za určitých podmínek; pokud máte zdravotní potíže, poraďte se s lékařem, zda je to bezpečné.",
     "confirmationIntro": "Před pokračováním prosím potvrďte všechny položky:"
