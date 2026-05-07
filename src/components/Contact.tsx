@@ -3,8 +3,8 @@ import { AtSymbolIcon, PhoneIcon } from '@heroicons/react/24/solid'
 
 const Contact: React.FC = () => {
   const { t } = useI18n()
-  const email = 'hello@example.com'
-  const phone = '+420 123 456 789'
+  const email = 'pokor.domo@seznam.com'
+  const phone = '+420 731 345 567'
 
   return (
     <section id="contact" className="py-24 bg-white scroll-mt-24">
