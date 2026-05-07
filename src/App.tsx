@@ -16,8 +16,8 @@ const Home = () => (
   <main>
     <Navbar />
     <Intro />
+      <Description />
     <Gallery />
-    <Description />
     <Pricing />
     <Contact />
     <Faq />
