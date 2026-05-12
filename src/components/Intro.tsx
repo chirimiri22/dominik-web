@@ -15,7 +15,7 @@ const Intro: React.FC<Props> = () => {
             className="relative isolate min-h-screen flex items-center justify-center overflow-hidden scroll-mt-24 bg-[#d8ba96]"
         >
             <div
-                className="absolute inset-0 md:inset-y-0 md:left-[25%] md:right-0 bg-cover bg-center"
+                className="absolute inset-0 md:inset-y-0 md:left-[25%] md:right-0 bg-cover bg-center sm:bg-[length:100%] bg-[length:200%]"
                 style={{backgroundImage: "url('/masaz_promo-13.webp')", backgroundPosition: '50% 35%'}}
             />
             <div className="absolute inset-0 bg-gradient-to-r from-ink/85 via-ink/55 to-transparent"/>
@@ -28,13 +28,13 @@ const Intro: React.FC<Props> = () => {
             >
 
                 <div
-                    className="mr-auto max-w-xl rounded-[2rem] border border-white/15 bg-black/35 p-8 sm:p-12 text-white shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-md text-left">
-                    <p className="mb-8 inline-flex rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-sand-100">
+                    className="mr-auto w-full max-w-xs sm:max-w-xl rounded-[2rem] border border-white/15 bg-black/35 p-6 sm:p-12 text-white shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-md text-left">
+                    <p className="mb-4 sm:mb-8 inline-flex rounded-full bg-white/10 px-4 py-1 text-xs font-semibold uppercase tracking-[0.24em] text-sand-100">
                         {t('intro.badge')}
                     </p>
-                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-5">{t('intro.title')}</h1>
+                    <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-5">{t('intro.title')}</h1>
 
-                    <p className="mb-8 text-lg sm:text-xl text-sand-100/90 leading-relaxed max-w-2xl">
+                    <p className="mb-4 sm:mb-8 text-sm sm:text-xl text-sand-100/90 leading-relaxed max-w-2xl">
                         {subtitleLines.map((line, index) => (
                             <React.Fragment key={`${line}-${index}`}>
                                 {line}
@@ -53,7 +53,7 @@ const Intro: React.FC<Props> = () => {
                         >
                             {t('intro.cta')}
                         </button>
-                        <span className="text-sm text-sand-100/80">{t('intro.note')}</span>
+                        <span className=" text-sm text-sand-100/80">{t('intro.note')}</span>
                     </div>
                 </div>
             </motion.div>

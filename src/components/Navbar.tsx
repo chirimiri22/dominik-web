@@ -28,7 +28,7 @@ const Navbar = (): JSX.Element => {
   }, [])
 
   const links: NavLink[] = [
-    { id: 'intro', label: String(t('nav.intro')) },
+    // { id: 'intro', label: String(t('nav.intro')) },
     { id: 'description', label: String(t('nav.description')) },
       { id: 'gallery', label: String(t('nav.gallery')) },
       { id: 'pricing', label: String(t('nav.pricing')) },
