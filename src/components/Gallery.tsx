@@ -71,7 +71,7 @@ const Gallery: React.FC = () => {
   }
 
   return (
-    <section id="gallery" className="py-24 bg-sand-100/70 scroll-mt-24">
+    <section id="gallery" className="py-24 bg-sand-100/70 ">
       <div className="px-6 sm:px-8 lg:px-12 max-w-screen-xl mx-auto">
         <div className="mb-10 flex items-end justify-between gap-4">
           <div className="max-w-2xl">

@@ -7,7 +7,7 @@ const Contact: React.FC = () => {
   const phone = '+420 731 345 567'
 
   return (
-    <section id="contact" className="py-24 bg-white scroll-mt-24">
+    <section id="contact" className="py-24 bg-white ">
       <div className="px-6 sm:px-8 lg:px-12 max-w-screen-xl mx-auto">
         <div className="max-w-2xl mb-10">
           <h2 className="text-4xl sm:text-5xl font-semibold mb-3 text-ink">{t('contact.title')}</h2>
@@ -41,4 +41,3 @@ const Contact: React.FC = () => {
 }
 
 export default Contact
-

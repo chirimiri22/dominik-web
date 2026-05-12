@@ -12,7 +12,7 @@ const Intro: React.FC<Props> = () => {
     return (
         <section
             id="intro"
-            className="relative isolate min-h-screen flex items-center justify-center overflow-hidden scroll-mt-24 bg-[#d8ba96]"
+            className="relative isolate min-h-screen flex items-center justify-center overflow-hidden  bg-[#d8ba96]"
         >
             <div
                 className="absolute inset-0 md:inset-y-0 md:left-[25%] md:right-0 bg-cover bg-center sm:bg-[length:100%] bg-[length:200%]"

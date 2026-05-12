@@ -23,7 +23,7 @@ const Faq = (): JSX.Element => {
   const [openIndex, setOpenIndex] = useState<number>(0)
 
   return (
-    <section id="faq" className="py-24 bg-sand-50 scroll-mt-24">
+    <section id="faq" className="py-24 bg-sand-50 ">
       <div className="mx-auto max-w-screen-xl px-6 sm:px-8 lg:px-12">
         <div className="max-w-2xl mb-10">
           <h2 className="mb-3 text-4xl sm:text-5xl font-semibold text-ink">{t('faq.title')}</h2>
@@ -80,8 +80,3 @@ const Faq = (): JSX.Element => {
 }
 
 export default Faq
-
-
-
-
-

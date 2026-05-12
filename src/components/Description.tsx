@@ -10,7 +10,7 @@ const Description = (): JSX.Element => {
         : [String(t('description.text'))]
 
     return (
-        <section id="description" className="py-24 bg-white scroll-mt-24">
+        <section id="description" className="py-24 bg-white ">
             <div className="px-6 sm:px-8 lg:px-12 max-w-screen-xl mx-auto">
                 <div className="mb-10 max-w-3xl">
                     <h2 className="text-4xl sm:text-5xl font-semibold text-ink">{t('description.title')}</h2>

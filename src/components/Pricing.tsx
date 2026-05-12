@@ -67,7 +67,7 @@ const Pricing: React.FC = () => {
     }, [])
 
     return (
-        <section id="pricing" className="py-24 bg-sand-50 scroll-mt-24">
+        <section id="pricing" className="py-24 bg-sand-50 ">
             <div className="px-6 sm:px-8 lg:px-12 max-w-screen-xl mx-auto">
                 <div className="max-w-2xl mb-10">
                     <h2 className="text-4xl sm:text-5xl font-semibold mb-3 text-ink">{t('pricing.title')}</h2>

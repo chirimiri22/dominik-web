@@ -21,7 +21,7 @@ const Testimonials = (): JSX.Element => {
     : []
 
   return (
-    <section id="testimonials" className="py-24 bg-white scroll-mt-24">
+    <section id="testimonials" className="py-24 bg-white ">
       <div className="mx-auto max-w-screen-xl px-6 sm:px-8 lg:px-12">
         <div className="max-w-2xl mb-10">
           <h2 className="mb-3 text-4xl sm:text-5xl font-semibold text-ink">{t('testimonials.title')}</h2>
@@ -53,7 +53,3 @@ const Testimonials = (): JSX.Element => {
 }
 
 export default Testimonials
-
-
-
-
