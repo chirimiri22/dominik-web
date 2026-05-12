@@ -76,7 +76,7 @@ const Gallery: React.FC = () => {
         <div className="mb-10 flex items-end justify-between gap-4">
           <div className="max-w-2xl">
             <h2 className="mb-3 text-4xl font-semibold text-ink sm:text-5xl">{t('gallery.title')}</h2>
-            <p className="text-ink/70 leading-relaxed">{t('gallery.subtitle')}</p>
+            {/*<p className="text-ink/70 leading-relaxed">{t('gallery.subtitle')}</p>*/}
           </div>
         </div>
 

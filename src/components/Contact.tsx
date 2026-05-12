@@ -15,6 +15,15 @@ const Contact: React.FC = () => {
         </div>
 
         <div className="grid gap-4 sm:grid-cols-2">
+            <a className="group flex items-center gap-4 rounded-[1.5rem] border border-sand-200 bg-sand-50 p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-clay-300" href={`tel:${phone}`}>
+            <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-clay-500/10 text-clay-600">
+              <PhoneIcon className="h-6 w-6" aria-hidden />
+            </span>
+                <div>
+                    <div className="text-sm font-medium text-ink/60">{t('contact.phoneLabel')}</div>
+                    <span className="font-semibold text-ink group-hover:text-clay-600">{phone}</span>
+                </div>
+            </a>
           <a className="group flex items-center gap-4 rounded-[1.5rem] border border-sand-200 bg-sand-50 p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-clay-300" href={`mailto:${email}`}>
             <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-clay-500/10 text-clay-600">
               <AtSymbolIcon className="h-6 w-6" aria-hidden />
@@ -25,15 +34,7 @@ const Contact: React.FC = () => {
             </div>
           </a>
 
-          <a className="group flex items-center gap-4 rounded-[1.5rem] border border-sand-200 bg-sand-50 p-5 shadow-soft transition-all hover:-translate-y-1 hover:border-clay-300" href={`tel:${phone}`}>
-            <span className="inline-flex h-12 w-12 items-center justify-center rounded-2xl bg-clay-500/10 text-clay-600">
-              <PhoneIcon className="h-6 w-6" aria-hidden />
-            </span>
-            <div>
-              <div className="text-sm font-medium text-ink/60">{t('contact.phoneLabel')}</div>
-              <span className="font-semibold text-ink group-hover:text-clay-600">{phone}</span>
-            </div>
-          </a>
+
         </div>
       </div>
     </section>

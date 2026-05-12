@@ -25,7 +25,7 @@ const Testimonials = (): JSX.Element => {
       <div className="mx-auto max-w-screen-xl px-6 sm:px-8 lg:px-12">
         <div className="max-w-2xl mb-10">
           <h2 className="mb-3 text-4xl sm:text-5xl font-semibold text-ink">{t('testimonials.title')}</h2>
-          <p className="leading-relaxed text-ink/70">{t('testimonials.subtitle')}</p>
+          {/*<p className="leading-relaxed text-ink/70">{t('testimonials.subtitle')}</p>*/}
         </div>
 
         <div className="grid gap-5 md:grid-cols-3">
