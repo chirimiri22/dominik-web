@@ -44,18 +44,13 @@ const BookingDetails: React.FC<BookingDetailsProps> = ({
             </label>
           ))}
         </div>
-
-        <div className="mt-6 rounded-[1.75rem] border border-sand-200 bg-sand-50 p-4 sm:p-5 shadow-soft">
-          <iframe
-            src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ3jVXa5mF3DcHAY8xSSwr0iZjr9Rdvc5-MuxGIuWvyEzyqOiA4K4e9-0y_S4UoxNaMnteascoE9?gv=true"
-            width="100%"
-            height="600"
-            title={t('booking.title')}
-            className="rounded-[1.25rem] border border-sand-200 bg-white"
-          />
-        </div>
       </div>
-    </div>
+        </div>
+
+
+
+
+
   )
 }
 

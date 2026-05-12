@@ -116,7 +116,10 @@
         ],
         "confirmError": "Please confirm all items before continuing."
       }
-    }
+    },
+    "myAppointments": "My appointments",
+    "eligibilityButton": "Can I get a massage?",
+    "eligibilityInfo": "Massage is not suitable for everyone. If you have a fever, infectious disease, open wounds, recent surgery, severe cardiovascular problems, or are pregnant, massage is not recommended. If in doubt, consult your doctor."
   },
   "booking": {
     "back": "Back",

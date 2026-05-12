@@ -115,9 +115,12 @@
         ],
         "confirmError": "Před pokračováním prosím potvrďte všechny položky."
        }
-     }
-   },
-  "booking": {
+     },
+    "myAppointments": "Moje termíny",
+    "eligibilityButton": "Můžu jít na masáž?",
+    "eligibilityInfo": "Masáž není vhodná pro každého. Pokud máte horečku, infekční onemocnění, otevřené rány, nedávnou operaci, závažné kardiovaskulární potíže nebo jste těhotná, masáž není doporučena. V případě pochybností se poraďte se svým lékařem."
+  },
+   "booking": {
     "back": "Zpět",
     "title": "Objednání termínu",
     "hideTerm": "Skrýt detaily",

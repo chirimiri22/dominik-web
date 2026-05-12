@@ -1,4 +1,4 @@
-import React, {useMemo, useState} from 'react'
+import React, {useMemo, useState, useEffect} from 'react'
 import {useI18n} from '../i18n'
 import BookingDetails from './BookingDetails'
 
@@ -54,13 +54,23 @@ const Pricing: React.FC = () => {
     const confirmations = (t('pricing.tiers.form.confirmations') as string[]) || []
     const [isExpanded, setIsExpanded] = useState<boolean>(false)
     const [confirmChecked, setConfirmChecked] = useState<Record<number, boolean>>({})
+    const [isModalOpen, setIsModalOpen] = useState(false)
+    const [isMobile, setIsMobile] = useState(false)
+    const [showEligibility, setShowEligibility] = useState(false)
+
+    // Responsive check for mobile
+    useEffect(() => {
+        const checkMobile = () => setIsMobile(window.matchMedia('(max-width: 640px)').matches)
+        checkMobile()
+        window.addEventListener('resize', checkMobile)
+        return () => window.removeEventListener('resize', checkMobile)
+    }, [])
 
     return (
         <section id="pricing" className="py-24 bg-sand-50 scroll-mt-24">
             <div className="px-6 sm:px-8 lg:px-12 max-w-screen-xl mx-auto">
                 <div className="max-w-2xl mb-10">
                     <h2 className="text-4xl sm:text-5xl font-semibold mb-3 text-ink">{t('pricing.title')}</h2>
-                    <p className="text-ink/70 leading-relaxed">{t('pricing.subtitle')}</p>
                 </div>
 
                 {services.length > 0 && (
@@ -70,7 +80,7 @@ const Pricing: React.FC = () => {
                             {services.map((service, index) => (
                                 <article key={index} className="rounded-[1.5rem] border border-sand-200 bg-white p-6 shadow-soft">
                                     <h3 className="mb-3 text-xl font-semibold text-ink">{service.title}</h3>
-                                    <div className="space-y-3 text-ink/75 leading-relaxed">
+                                    <div className="space-y-3 text-ink/75 leading-relaxed text-sm">
                                         {service.paragraphs.map((paragraph, paragraphIndex) => (
                                             <p key={paragraphIndex}>{paragraph}</p>
                                         ))}
@@ -101,27 +111,81 @@ const Pricing: React.FC = () => {
                     ))}
                 </div>
 
-                <div className="mt-8 flex justify-center">
-                    <button
-                        type="button"
-                        className="rounded-full bg-clay-500 px-9 py-4 text-lg font-semibold text-white shadow-soft transition-colors hover:bg-clay-600"
-                        onClick={() => setIsExpanded((prev) => !prev)}
-                        aria-expanded={isExpanded}
-                        aria-controls="booking-details"
-                    >
-                        {isExpanded ? t('booking.hideTerm') : t('intro.cta')}
-                    </button>
+
+                <div className="mt-8 flex flex-col items-center gap-3">
+                    <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto justify-center">
+                        <button
+                            type="button"
+                            className="sm:hidden block rounded-full bg-clay-500 px-9 py-4 text-lg font-semibold text-white shadow-soft transition-colors hover:bg-clay-600"
+                            onClick={() => {
+                                if (isMobile) {
+                                    setIsModalOpen(true)
+                                } else {
+                                    setIsExpanded((prev) => !prev)
+                                }
+                            }}
+                            aria-expanded={isExpanded}
+                            aria-controls="booking-details"
+                        >
+                            {t('pricing.myAppointments')}
+                        </button>
+                        <button
+                            type="button"
+                            className="rounded-full border-2 border-clay-500 px-9 py-4 text-lg font-semibold text-clay-600 bg-white shadow-soft transition-colors hover:bg-clay-50"
+                            onClick={() => setShowEligibility((prev) => !prev)}
+                            aria-expanded={showEligibility}
+                            aria-controls="massage-eligibility-info"
+                        >
+                            {t('pricing.eligibilityButton')}
+                        </button>
+                    </div>
+                    {showEligibility && (
+                        <div id="massage-eligibility-info" className="mt-4 w-full max-w-xl rounded-xl border border-sand-200 bg-white p-6 text-ink/80 text-base shadow-soft">
+                            {t('pricing.eligibilityInfo')}
+                        </div>
+                    )}
                 </div>
 
-                <BookingDetails
-                    isExpanded={isExpanded}
-                    confirmations={confirmations}
-                    confirmChecked={confirmChecked}
-                    onToggleConfirmation={(index) =>
-                        setConfirmChecked((prev) => ({...prev, [index]: !prev[index]}))
-                    }
-                />
+
             </div>
+            {/* Inline iframe for large screens only */}
+            {!isMobile && (
+                <div className="mx-auto mt-4 max-w-screen-xl px-6 lg:px-12 h-[88vh]">
+                    <iframe
+                        src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2JNtcZkXOdcRq_3KKjzjCvf1wgs3uAJ8WPi2wdzpMhiozy4AsSIsQk7pZPf1AMWF4MhnFaDPGZ?gv=true"
+                        width="100%"
+                        title={t('booking.title')}
+                        className="w-full h-full rounded-[1.25rem] border border-sand-200 bg-white"
+                    />
+                </div>
+            )}
+
+            {/* Modal for mobile only */}
+            {isMobile && isModalOpen && (
+                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+                    <div className="relative w-full h-full flex items-center justify-center">
+                        <div className="relative w-full h-full max-w-3xl max-h-[90vh] rounded-[1.25rem] border border-sand-200 bg-white shadow-2xl flex items-start">
+                            <button
+                                onClick={() => setIsModalOpen(false)}
+                                className="absolute top-4 right-4 z-10 rounded-full bg-white/90 hover:bg-white text-clay-600 p-3 shadow-lg focus:outline-none"
+                                aria-label={t('booking.close')}
+                            >
+                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-6 h-6">
+                                    <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                                </svg>
+                            </button>
+                            <iframe
+                                src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2JNtcZkXOdcRq_3KKjzjCvf1wgs3uAJ8WPi2wdzpMhiozy4AsSIsQk7pZPf1AMWF4MhnFaDPGZ?gv=true"
+                                title={t('booking.title')}
+                                width="100%"
+                                height="100%"
+                                className="w-full h-full rounded-[1.25rem]"
+                            />
+                        </div>
+                    </div>
+                </div>
+            )}
+
         </section>
     )
 }
