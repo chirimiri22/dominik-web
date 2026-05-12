@@ -1,6 +1,5 @@
 import React, {useMemo, useState, useEffect} from 'react'
 import {useI18n} from '../i18n'
-import BookingDetails from './BookingDetails'
 
 type ServiceDetail = {
     title: string
@@ -51,9 +50,7 @@ const Pricing: React.FC = () => {
         [t],
     )
 
-    const confirmations = (t('pricing.tiers.form.confirmations') as string[]) || []
     const [isExpanded, setIsExpanded] = useState<boolean>(false)
-    const [confirmChecked, setConfirmChecked] = useState<Record<number, boolean>>({})
     const [isModalOpen, setIsModalOpen] = useState(false)
     const [isMobile, setIsMobile] = useState(false)
     const [showEligibility, setShowEligibility] = useState(false)
