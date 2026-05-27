@@ -30,7 +30,7 @@ const Intro: React.FC<Props> = () => {
                 className="absolute inset-0 md:inset-y-0 md:left-[25%] md:right-0 bg-cover bg-center"
                 style={{
                     backgroundImage: "url('/masaz_promo-13.webp')",
-                    backgroundPosition: '65% 38%',
+                    backgroundPosition: '65% 39%',
                     backgroundSize: '320% auto' // increased zoom for small screens
                 }}
             >
