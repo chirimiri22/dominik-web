@@ -67,9 +67,9 @@ const Navbar = (): JSX.Element => {
       <nav className="mx-auto max-w-screen-xl px-4 sm:px-8 lg:px-12" aria-label="Section navigation">
         <div className="flex items-center justify-between gap-3 py-3">
           <div className="flex min-w-0 flex-1 items-center gap-2 overflow-x-auto">
-            <a href="#intro" className="shrink-0 mr-1" aria-label="Go to intro">
-              <LogoCircle isScrolled={isScrolled} />
-            </a>
+            {/*<a href="#intro" className="shrink-0 mr-1" aria-label="Go to intro">*/}
+            {/*  <LogoCircle isScrolled={isScrolled} />*/}
+            {/*</a>*/}
             {links.map((link) => (
               <a
                 key={link.id}
