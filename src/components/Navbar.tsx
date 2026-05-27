@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { useLocation, useNavigate } from 'react-router-dom'
 import { useI18n } from '../i18n'
-import LogoCircle from './LogoCircle'
+// import LogoCircle from './LogoCircle'
 
 type NavLink = {
   id: string
