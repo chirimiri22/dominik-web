@@ -10,14 +10,16 @@ type Image = {
 }
 
 const sampleImages: Image[] = [
-  { id: '3', src: '/masaz_promo-1.webp', altKey: 'gallery.items.2' },
-  { id: '4', src: '/masaz_promo-5.webp', altKey: 'gallery.items.3' },
-  { id: '5', src: '/masaz_promo-7.webp', altKey: 'gallery.items.4' },
-  { id: '6', src: '/masaz_promo-18.webp', altKey: 'gallery.items.5' },
-  { id: '7', src: '/masaz_promo-21.webp', altKey: 'gallery.items.6' },
-  { id: '8', src: '/masaz_promo-32.webp', altKey: 'gallery.items.7' },
-  { id: '9', src: '/masaz_promo-33.webp', altKey: 'gallery.items.8' },
-  { id: '10', src: '/masaz_promo-39.webp', altKey: 'gallery.items.9' },
+    { id: '5', src: '/masaz_promo-7.webp', altKey: 'gallery.items.4' },
+    { id: '7', src: '/masaz_promo-21.webp', altKey: 'gallery.items.6' },
+    { id: '8', src: '/masaz_promo-32.webp', altKey: 'gallery.items.1' },
+
+    { id: '4', src: '/masaz_promo-5.webp', altKey: 'galler/y.items.3' },
+    { id: '3', src: '/masaz_promo-1.webp', altKey: 'gallery.items.2' },
+    { id: '6', src: '/masaz_promo-18.webp', altKey: 'gallery.items.5' },
+
+  // { id: '9', src: '/masaz_promo-33.webp', altKey: 'gallery.items.8' },
+  // { id: '10', src: '/masaz_promo-39.webp', altKey: 'gallery.items.9' },
 ]
 
 const Gallery: React.FC = () => {
