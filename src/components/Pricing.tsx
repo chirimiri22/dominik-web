@@ -128,17 +128,37 @@ const Pricing: React.FC = () => {
                         </button>
                         <button
                             type="button"
-                            className="rounded-full border-2 border-clay-500 px-9 py-4 text-lg font-semibold text-clay-600 bg-white shadow-soft transition-colors hover:bg-clay-50"
+                            className="rounded-full border-2 border-clay-500 px-9 py-4 text-lg font-semibold text-clay-600 bg-white shadow-soft transition-colors hover:bg-clay-50 flex items-center gap-2"
                             onClick={() => setShowEligibility((prev) => !prev)}
                             aria-expanded={showEligibility}
                             aria-controls="massage-eligibility-info"
                         >
                             {t('pricing.eligibilityButton')}
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                strokeWidth={2}
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                className={`w-5 h-5 transition-transform duration-300 ${showEligibility ? 'rotate-180' : ''}`}
+                            >
+                                <polyline points="6 9 12 15 18 9" />
+                            </svg>
                         </button>
                     </div>
                     {showEligibility && (
-                        <div id="massage-eligibility-info" className="mt-4 w-full max-w-xl rounded-xl border border-sand-200 bg-white p-6 text-ink/80 text-base shadow-soft">
-                            {t('pricing.eligibilityInfo')}
+                        <div id="massage-eligibility-info" className="mt-4 w-full max-w-3xl rounded-xl border border-sand-200 bg-white p-6 text-ink/80 text-base shadow-soft animate-in fade-in slide-in-from-top-2 duration-300">
+                            <div className="prose prose-sm max-w-none text-ink/80">
+                                <div dangerouslySetInnerHTML={{
+                                    __html: (t('pricing.eligibilityInfo') as string)
+                                        .replace(/<p className='mb-4 font-semibold'>/g, '<p class="mb-4 font-semibold">')
+                                        .replace(/<ol className='space-y-3 list-decimal list-inside'>/g, '<ol class="space-y-3 list-decimal list-inside">')
+                                        .replace(/<ul className='ml-6 mt-2 space-y-1 list-disc list-inside'>/g, '<ul class="ml-6 mt-2 space-y-1 list-disc list-inside">')
+                                        .replace(/<p className='mt-6 pt-4 border-t border-sand-200 text-sm italic'>/g, '<p class="mt-6 pt-4 border-t border-sand-200 text-sm italic">')
+                                }} />
+                            </div>
                         </div>
                     )}
                 </div>
