@@ -128,7 +128,7 @@ const Pricing: React.FC = () => {
                         </button>
                         <button
                             type="button"
-                            className="rounded-full border-2 border-clay-500 px-9 py-4 text-lg font-semibold text-clay-600 bg-white shadow-soft transition-colors hover:bg-clay-50 flex items-center gap-2"
+                            className="rounded-full border-2 border-clay-500 px-9 py-4 text-lg font-semibold text-clay-600 bg-white shadow-soft transition-colors hover:bg-clay-50 flex items-center justify-center gap-2"
                             onClick={() => setShowEligibility((prev) => !prev)}
                             aria-expanded={showEligibility}
                             aria-controls="massage-eligibility-info"
