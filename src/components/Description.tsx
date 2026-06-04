@@ -30,7 +30,7 @@ const Description = (): JSX.Element => {
                                     <li key={index}
                                         className="flex gap-3 rounded-2xl bg-white px-4 py-3 border border-sand-200">
                                         <span
-                                            className="mt-1 inline-flex h-2.5 w-2.5 rounded-full bg-clay-500 flex-shrink-0"/>
+                                            className="mt-2 inline-flex h-2.5 w-2.5 rounded-full bg-clay-500 flex-shrink-0"/>
                                         <span>{point}</span>
                                     </li>
                                 ))}
