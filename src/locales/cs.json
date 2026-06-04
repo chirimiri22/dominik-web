@@ -35,19 +35,20 @@
   "description": {
     "title": "O mně",
     "heading": "Jmenuji se Dominik Pokorný",
-    "valuesTitle": "Moje hodnoty",
+
     "imageAlt": "Portrét Dominika Pokorného",
     "paragraphs": [
-      "Jsem kuchař, sportovec a osobní masér pro muže.",
+      "Jsem osobní masér pro muže a milovník vaření a dobrého jídla.",
       "Dobře vím, jaké to je, když člověk celé týdny maká, řeší životní starosti a únava i stres se jen hromadí.",
       "Právě proto jsem začal masírovat a vytvářet lidem bezpečný prostor, kde se můžou zastavit a opravdu žít.",
       "Pomáhám vrátit tělu lehkost, radost z pohybu a hlavně klid na duši.",
       "Protože každý z nás si zaslouží vypustit nahromaděný stres i vnitřní napětí a zažít skutečné uvolnění."
     ],
+    "valuesTitle": "Proč si vybrat zrovna mě?",
     "points": [
-      "Jedu na kvalitu, ne na kvantitu — maximálně dva klienti za den",
-      "Přijedu přímo k vám domů, bez cestování a hledání parkování",
-      "Péče je vždy podle domluvy, vašich hranic a aktuálního stavu"
+      "Jedu na kvalitu, ne na kvantitu – maximálně dva klienti za den.",
+      "Žádné dlouhé cestování a hledání parkování – přijedu přímo k vám a vše zařídím já.",
+      "Masérská péče probíhá podle Vás a tak jak je to příjemné Vám."
     ],
     "text": "Jmenuji se Dominik Pokorný. Jsem osobní masér pro muže a pomáhám lidem vrátit tělu lehkost, pohyb a klid."
   },
@@ -57,6 +58,7 @@
     "subtitle": "Tradiční finská masáž podle intenzity, kterou máte rádi — jemně relaxační i pořádně tvrdá.",
     "servicesSubtitle": "Nabízím",
     "variantsSubtitle": "Možné varianty",
+    "badgeRecommended": "Nejoblíbenější",
     "services": [
       {
         "title": "Finská masáž",
@@ -71,6 +73,12 @@
           "Součástí každé masáže je i pohmatové vyšetření masírovaných částí těla, abych našel případně zaseklé svaly vhodné pro tlakové ošetření.",
           "Rozvolňování těchto bodů je krátkodobě intenzivní, ale dlouhodobě přináší výraznou úlevu od bolesti i lepší pohyblivost.",
           "Vždy probíhá pouze po domluvě s vámi a v souladu s vaším přáním."
+        ]
+      },
+      {
+        "title": "Baňkování",
+        "paragraphs": [
+          "Baňkování je efektivní způsob jak uvolnit dlouhodobě zatuhlé svaly, na které běžná masáž nestačí. Při této masáži se na pokožku přikládají baňky – skleněné nádobky, v nichž se vytvoří podtlak a ten způsobí jejich přisátí na pokožku."
         ]
       }
     ],
@@ -88,6 +96,13 @@
         "price": 1400,
         "duration": "90 minut",
         "advantage": "Více času na hlubší práci a dlouhodobější úlevu."
+      },
+      "deluxe": {
+        "title": "Celotělová masáž Deluxe",
+        "shortTitle": "Deluxe",
+        "price": 4500,
+        "duration": "150 minut",
+        "advantage": "Ideální dárek, pokud chcete někoho ocenit a věnovat mu opravdový zážitek. Důkladná hloubková masáž celého těla, podle Vašich preferencí.\nJelikož jsem milovník dobrého jídla, nechybí v tomto balíčku ani exkluzivní občerstvení a nápoje po celou dobu procedury."
       },
       "button": "Vybrat",
       "selected": "Vybráno",

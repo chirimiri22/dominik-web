@@ -1,31 +1,32 @@
 {
   "intro": {
-    "badge": "Mobile Masseur",
-    "title": "Pokorný Massages",
+    "badge": "Mobile masseur",
+    "title": "Masáže Pokorný",
     "subtitle": [
       "Do you long to experience true relaxation and relief?",
-      "To switch off everything around you and just exist for a moment?"
+      "Do you want to switch off everything around you for a moment?",
+      "To simply exist for a while?"
     ],
-    "cta": "Book me",
-    "note": "I will come to your home and create a space for real relaxation."
+    "cta": "Find a time",
+    "note": "I come to your home and create a space for real relaxation."
   },
   "gallery": {
     "tag": "Portfolio",
     "title": "Gallery",
-    "heading": "Photos capturing the healing atmosphere",
-    "subtitle": "Selected moments from massages and peaceful home environments.",
+    "heading": "Photos that capture the treatment atmosphere",
+    "subtitle": "Selected moments from massages and peaceful home settings.",
     "videoTag": "Video",
     "videoTitle": "Massage Video",
-    "videoCaption": "A short video showing the massage process.",
+    "videoCaption": "A short demonstration of the massage process in Shorts format.",
     "items": [
-      "Brand background and relaxation atmosphere",
+      "Brand background and relaxing atmosphere",
       "Portrait of Dominik Pokorný",
-      "Preparation of the massage space",
+      "Preparing the massage space",
       "Relaxation and calm during treatment",
       "Comfortable massage environment",
-      "Preparation of tools and space",
+      "Preparing tools and the space",
       "Mobile massage in practice",
-      "Detail of treatment during massage",
+      "Detail of treatment during the massage",
       "Pleasant atmosphere at the client's home",
       "Mobile service with full equipment",
       "Sample shot from a massage"
@@ -34,42 +35,49 @@
   "description": {
     "title": "About me",
     "heading": "My name is Dominik Pokorný",
-    "valuesTitle": "How do I work?",
     "imageAlt": "Portrait of Dominik Pokorný",
+    "valuesTitle": "Why choose me?",
     "paragraphs": [
-      "I am a personal masseur for men, a chef, and an athlete.",
-      "I know well what it's like when you work hard for weeks, deal with life's worries, and fatigue and stress just pile up.",
-      "That's why I started massaging and creating a safe space for people to stop and truly live.",
-      "I help restore lightness to the body, joy of movement, and above all, peace of mind.",
-      "Because everyone deserves to release accumulated stress and inner tension and experience real relaxation."
+      "I am a personal masseur for men, a cook, and an athlete.",
+      "I know well what it's like to work hard for weeks, deal with life's worries, and have fatigue and stress pile up.",
+      "That's why I started massaging and creating a safe space where people can pause and truly live.",
+      "I help return lightness to the body, joy of movement, and above all, peace of mind.",
+      "Because everyone deserves to finally release accumulated stress and inner tension and experience true relaxation."
     ],
     "points": [
-      "I focus on quality, not quantity — a maximum of two clients per day",
-      "I come directly to your home, no travel or parking hassle",
-      "Care is always tailored to your needs, boundaries, and current state"
+      "I focus on quality, not quantity — a maximum of two clients per day.",
+      "I come directly to your home, no travel or parking hassle.",
+      "Care is always tailored to your needs, boundaries, and current condition."
     ],
-    "text": "My name is Dominik Pokorný. I am a personal masseur for men and I help people restore lightness, movement, and peace to their bodies."
+    "text": "My name is Dominik Pokorný. I am a personal masseur for men and I help people restore lightness, movement and calm to their bodies."
   },
   "pricing": {
     "title": "Pricing",
     "heading": "Finnish massage and care tailored to your needs",
-    "subtitle": "Traditional Finnish massage at the intensity you like — gentle and relaxing or really strong.",
+    "subtitle": "Traditional Finnish massage at the intensity you prefer — gentle and relaxing or very deep.",
     "servicesSubtitle": "I offer",
     "variantsSubtitle": "Available options",
+    "badgeRecommended": "Most popular",
     "services": [
       {
         "title": "Finnish massage",
         "paragraphs": [
           "Traditional Finnish massage at the intensity you prefer.",
-          "It can be very gentle and relaxing, or really strong. Everything depends on what you want."
+          "It can be very gentle and relaxing, or very intense — everything depends on what you want."
         ]
       },
       {
         "title": "Trigger point release",
         "paragraphs": [
-          "Every massage includes a palpation examination of the massaged body parts to find any tight muscles suitable for pressure treatment.",
-          "Releasing these points is briefly intense, but brings significant long-term relief from pain and better mobility.",
-          "Always performed only by agreement with you and according to your wishes."
+          "Every massage includes palpation of the treated areas to find any tight muscles suitable for pressure therapy.",
+          "Releasing these points is briefly intense but brings significant long-term relief from pain and restores mobility.",
+          "This work is always performed only after agreement with you and according to your wishes."
+        ]
+      },
+      {
+        "title": "Cupping",
+        "paragraphs": [
+          "Cupping is an effective way to release chronically tight muscles that regular massage cannot reach. Glass cups are applied to the skin to create suction and encourage release."
         ]
       }
     ],
@@ -87,6 +95,13 @@
         "price": 1400,
         "duration": "90 minutes",
         "advantage": "More time for deeper work and longer-lasting relief."
+      },
+      "deluxe": {
+        "title": "Full-body Deluxe massage",
+        "shortTitle": "Deluxe",
+        "price": 4500,
+        "duration": "150 minutes",
+        "advantage": "Ideal as a gift if you want to treat someone to a real experience. A thorough deep full-body massage tailored to your preferences.\nAs a lover of good food, this package also includes exclusive refreshments and drinks throughout the session."
       },
       "button": "Select",
       "selected": "Selected",
@@ -111,11 +126,11 @@
         "confirmations": [
           "I confirm that I am not currently taking blood-thinning medication.",
           "I confirm that I do not have an acute fever or infection.",
-          "I understand the risks and agree to the treatment."
+          "I confirm that I understand the risks and agree to the treatment."
         ],
         "confirmError": "Please confirm all items before continuing."
-      }
-    },
+       }
+     },
     "myAppointments": "My appointments",
     "eligibilityButton": "Can I get a massage?",
     "eligibilityInfo": "<p className='mb-4 font-semibold'>Massage cannot be performed if I notice any of the following or if you have been diagnosed with:</p><ol className='space-y-3 list-decimal list-inside'><li>Acute injuries</li><li>Malignant tumors – could spread malignant cells to other parts and organs</li><li>Suppurative skin diseases – risk of spreading infection to other parts of the customer's and masseur's skin.</li><li>Certain skin rashes – e.g., erysipelas, chickenpox, measles.</li><li>Tuberculosis of bones, joints, tendons and active pulmonary TB – risk of spreading Koch's bacillus to other parts.</li><li>Certain types of constipation – could damage the inner wall of the intestine with hard feces. <ul className='ml-6 mt-2 space-y-1 list-disc list-inside'><li>Relates to abdominal massage.</li></ul></li><li>Any inflammation – always requires consultation with a personal physician. <ul className='ml-6 mt-2 space-y-1 list-disc list-inside'><li>Including seemingly unrelated inflammations (e.g., inflammation in the back prevents massage of the lower limbs - risk of spreading the inflammation.)</li><li>All acute inflammation of the abdominal cavity – risk of peritonitis and possible perforation of the inflamed organ (warm and red spot)</li><li>Gallstones, gallbladder inflammation, gastric and duodenal ulcers. (In these diseases, abdominal massage is prohibited)</li><li>Acute joint inflammation. (Symptoms: red skin, joint is painful, warm, movement is limited. The joint area is very sensitive, swollen, enlarged)</li><li>Note: In chronic joint inflammation, the joint is also swollen, but not red and warm – here massage is actually recommended.</li></ul></li><li>Fever – like any inflammation.</li><li>Bleeding disorders – could result in blood extravasation into skin, subcutaneous tissue, muscles, and internal organs.</li><li>Varicose veins in the area to be massaged.</li><li>General weakness and fatigue of the body.</li><li>Cardiac decompensation <ul className='ml-6 mt-2 space-y-1 list-disc list-inside'><li>State where the heart cannot meet the body's needs (such a person is short of breath, has bluish lips, lower limb edema).</li></ul></li><li>Mental illness - e.g., chronic schizophrenia etc.</li></ol><p className='mt-6 pt-4 border-t border-sand-200 text-sm italic'>I hereby declare that I do not suffer from any of the above contraindications that would make massage impossible, my statement is truthful, and I take responsibility for concealing any health complications the masseur should know about.</p>"
@@ -125,13 +140,13 @@
     "title": "Book an appointment",
     "hideTerm": "Hide details",
     "checkTitle": "Can I undergo a massage?",
-    "infoParagraph": "Massage can only be performed under certain conditions; if you have health issues, consult your doctor to see if it is safe.",
+    "infoParagraph": "A massage can only be performed under certain conditions; if you have health issues, consult your doctor to see if it is safe.",
     "confirmationIntro": "Please confirm all items before continuing:"
   },
   "contact": {
     "title": "Contact",
-    "heading": "Get in touch with me",
-    "text": "If you have any further questions, feel free to contact me. :)",
+    "heading": "Get in touch",
+    "text": "If you have any further questions, feel free to contact me.",
     "emailLabel": "Email",
     "phoneLabel": "Phone"
   },
@@ -153,33 +168,33 @@
         "question": "Do I need to prepare for the massage?",
         "answer": [
           "Only three things are needed: fill out the questionnaire truthfully before booking, avoid heavy meals at least an hour before the massage, and plan a more restful day afterwards.",
-          "No other special preparation is required from you, I will take care of everything else."
+          "No other special preparation is required from you — I will take care of everything else."
         ]
       },
       {
         "question": "Do I have to be naked during the massage?",
         "answer": [
-          "I respect clients' boundaries and maintain maximum discretion for intimate and private areas.",
+          "I respect clients' boundaries and maintain maximum discretion regarding intimacy and private areas.",
           "The usual standard is underwear, which is adjusted under a clean sheet — whatever is not being massaged is discreetly covered."
         ]
       },
       {
         "question": "Do you massage women?",
-        "answer": "For personal reasons, my clientele is exclusively male."
+        "answer": "For personal reasons, my clientele is set exclusively to men."
       },
       {
         "question": "Does it hurt?",
         "answer": [
-          "It depends on your preferences and expectations.",
-          "If you want a gentle relaxing massage, it won't hurt. If you want deeper work or trigger point release, it can be more intense, but it helps the body in the long run."
+          "It depends on our agreement and your expectations.",
+          "If you want a gentle relaxing massage, it won't hurt. If you want deeper work or trigger point release, it can be more intense, but it helps the body in the long term."
         ]
       },
       {
         "question": "How does it work?",
         "answer": [
-          "I come to your home (or your environment), bring everything needed, and create a zone of calm right where you are most comfortable.",
+          "I come to your home (or your environment), bring everything needed, and create a zone of calm right where you normally are.",
           "The equipment includes a heated mat, oil warmer, scented candles, and relaxing tea.",
-          "After a brief discussion, the massage takes place, then I pack everything up and you can continue to relax. The next day, I recommend a lighter schedule without strenuous physical activity."
+          "After a brief discussion, the massage takes place, then I pack everything up and you can continue to relax. The next day I recommend a lighter schedule without strenuous physical activity."
         ]
       },
       {

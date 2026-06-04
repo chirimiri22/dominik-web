@@ -9,6 +9,11 @@ module.exports = {
           200: '#ebddc8',
           300: '#ddc2a0',
         },
+        'accent-yellow': {
+          DEFAULT: '#EED9A3',
+          600: '#D9B97A',
+          text: '#6B3F21',
+        },
         clay: {
           500: '#a1644c',
           600: '#8f533e',

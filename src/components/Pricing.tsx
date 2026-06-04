@@ -15,6 +15,46 @@ type Tier = {
     advantage: string
 }
 
+// Reusable card component for a tier
+const TierCard: React.FC<{tier: Tier, special?: boolean, styles?: string, noTime?: boolean}> = ({tier, special, styles = "", noTime}) => {
+    const {t} = useI18n()
+    return (
+        <article
+            key={tier.id}
+            className={`${styles} rounded-[1.5rem] border bg-white p-5 shadow-soft relative`}
+        >
+            {/* small badge in the top-right when tier.special is true */}
+
+        {/*<p className="text-sm font-semibold uppercase tracking-[0.2em] text-clay-600">{tier.shortTitle}</p>*/}
+        <div className={"flex justify-between items-center  "}>
+             <h3 className="mt-2 text-lg font-semibold text-ink">{tier.title}</h3>
+            {special && (
+                <span className="mb-4 inline-flex rounded-full bg-clay-500 px-2 py-0.5  text-[10px] sm:px-4 sm:py-1 sm:text-xs font-semibold uppercase tracking-[0.24em] text-white">
+            {String(t('pricing.badgeRecommended'))}
+        </span>
+            )}
+        </div>
+        <div className="mt-3 flex items-baseline gap-2">
+            {!noTime && (
+                <>
+                <p className="text-2xl  font-semibold text-ink/70">{tier.duration}</p>
+                <span className="text-2xl text-ink/50">/</span>
+                </>
+            )}
+
+            <p className="text-2xl font-semibold text-clay-600">{tier.price} Kč</p>
+        </div>
+
+        <p className="mt-3 text-sm text-ink/70">{tier.advantage}</p>
+    </article>
+    )
+}
+
+// Three separate components as requested
+const BasicTier: React.FC<{tier: Tier}> = ({tier}) => <TierCard tier={tier} styles={"flex-1 border-sand-200"}  />
+const ProTier: React.FC<{tier: Tier}> = ({tier}) => <TierCard tier={tier} special styles={"flex-1 border-2 border-accent-yellow"}   />
+const DeluxeTier: React.FC<{tier: Tier}> = ({tier}) => <TierCard tier={tier} styles={"md:max-w-[50%] border-sand-200"} noTime/>
+
 const Pricing: React.FC = () => {
     const {t} = useI18n()
     const rawServices = t('pricing.services')
@@ -46,6 +86,14 @@ const Pricing: React.FC = () => {
                 price: Number(t('pricing.tiers.pro.price')),
                 advantage: String(t('pricing.tiers.pro.advantage')),
             },
+            {
+                id: 'deluxe',
+                title: String(t('pricing.tiers.deluxe.title')),
+                shortTitle: String(t('pricing.tiers.deluxe.shortTitle')),
+                duration: String(t('pricing.tiers.deluxe.duration')),
+                price: Number(t('pricing.tiers.deluxe.price')),
+                advantage: String(t('pricing.tiers.deluxe.advantage')),
+            },
         ] satisfies Tier[],
         [t],
     )
@@ -73,9 +121,9 @@ const Pricing: React.FC = () => {
                 {services.length > 0 && (
                     <div className="mb-8">
                         <p className="mb-4 text-2xl font-semibold text-clay-600">{t('pricing.servicesSubtitle')}</p>
-                        <div className="grid gap-5 md:grid-cols-2">
+                        <div className="flex md:flex-row flex-col gap-6 ">
                             {services.map((service, index) => (
-                                <article key={index} className="rounded-[1.5rem] border border-sand-200 bg-white p-6 shadow-soft">
+                                <article key={index} className="flex-1 rounded-[1.5rem] border border-sand-200 bg-white p-6 shadow-soft">
                                     <h3 className="mb-3 text-xl font-semibold text-ink">{service.title}</h3>
                                     <div className="space-y-3 text-ink/75 leading-relaxed text-sm">
                                         {service.paragraphs.map((paragraph, paragraphIndex) => (
@@ -90,22 +138,21 @@ const Pricing: React.FC = () => {
 
                 <p className="mb-4 text-2xl font-semibold text-clay-600">{t('pricing.variantsSubtitle')}</p>
 
-                <div className="grid gap-5 sm:grid-cols-2">
-                    {tiers.map((tier) => (
-                        <article
-                            key={tier.id}
-                            className="rounded-[1.5rem] border border-sand-200 bg-white p-5 shadow-soft"
-                        >
-                            {/*<p className="text-sm font-semibold uppercase tracking-[0.2em] text-clay-600">{tier.shortTitle}</p>*/}
-                            <h3 className="mt-2 text-lg font-semibold text-ink">{tier.title}</h3>
-                            <div className="mt-3 flex items-baseline gap-2">
-                                <p className="text-2xl  font-semibold text-ink/70">{tier.duration}</p>
-                                <span className="text-2xl text-ink/50">/</span>
-                                <p className="text-2xl font-semibold text-clay-600">{tier.price} Kč</p>
+                <div className="flex flex-col gap-6">
+                    {/* First row: Basic + Pro (stack on small, row on md+) */}
+                    {tiers.length >= 3 ? (
+                        <>
+                            <div className="flex flex-col md:flex-row gap-6">
+                                <BasicTier key={tiers[0].id} tier={tiers[0]} />
+                                <ProTier key={tiers[1].id} tier={tiers[1]} />
                             </div>
-                            <p className="mt-3 text-sm text-ink/70">{tier.advantage}</p>
-                        </article>
-                    ))}
+
+                            {/* Deluxe on its own line */}
+                            <div className="flex justify-center">
+                                <DeluxeTier key={tiers[2].id} tier={tiers[2]} />
+                            </div>
+                        </>
+                    ) : null}
                 </div>
 
 
