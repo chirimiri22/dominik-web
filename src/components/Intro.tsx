@@ -1,6 +1,8 @@
 import React from 'react'
 import {motion, useReducedMotion, AnimatePresence} from 'framer-motion'
 import {useI18n} from '../i18n'
+import {MapPinIcon} from '@heroicons/react/24/solid'
+import Badge from './Badge'
 
 type Props = {}
 
@@ -55,9 +57,14 @@ const Intro: React.FC<Props> = () => {
                 <div
                     className="mx-auto sm:mx-0 sm:mr-auto w-full max-w-xs sm:max-w-xl rounded-[2rem] border border-white/15 bg-black/35 p-6 sm:p-12 mt-16 sm:mt-0 text-white shadow-[0_30px_90px_rgba(0,0,0,0.28)] backdrop-blur-md text-left">
                     {/* Badge: smaller on mobile, original size from sm+ */}
-                    <p className="mb-4 sm:mb-8 inline-flex rounded-full bg-white/10 px-2 py-0.5 text-[10px] sm:px-4 sm:py-1 sm:text-xs font-semibold uppercase tracking-[0.24em] text-sand-100">
-                        {t('intro.badge')}
-                    </p>
+                    <div className="mb-4 sm:mb-8 flex items-center gap-4">
+                        <Badge title={t('intro.badge') as string}/>
+
+
+                        <Badge title={(t('intro.locationShort') as string) ?? (t('intro.location') as string)}
+                               icon={<MapPinIcon className="w-3 h-3 sm:w-4 sm:h-4 text-sand-100" aria-hidden/>}/>
+
+                    </div>
                     <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-5">{t('intro.title')}</h1>
 
                     <div className="mb-4 sm:mb-8 text-sm sm:text-xl text-sand-100/90 leading-relaxed max-w-2xl">
