@@ -4,20 +4,26 @@ const Description = (): JSX.Element => {
     const rawPoints = t('description.points')
     const points = Array.isArray(rawPoints) ? rawPoints : []
     const rawParagraphs = t('description.paragraphs')
+        ? t('description.paragraphs')
+        : undefined
     const paragraphs = Array.isArray(rawParagraphs)
         ? rawParagraphs.filter((p): p is string => typeof p === 'string')
         : [String(t('description.text'))]
 
     return (
-        <section id="description" className="py-24 bg-sand-50 ">
+        <section id="description" className="py-24 bg-sand-50 min-h-screen">
             <div className="px-6 sm:px-8 lg:px-12 max-w-screen-xl mx-auto">
-                <div className="mb-10 max-w-3xl">
+                <div className="mb-10 max-w-3xl md:hidden flex">
                     <h2 className="text-4xl sm:text-5xl font-semibold text-ink">{t('description.title')}</h2>
                 </div>
 
-                <div className="flex gap-8 sm:flex-row flex-col">
-                    <div  className="flex-1 space-y-8">
-                        <div className="space-y-4 text-ink/70 leading-relaxed">
+
+                <div className="flex gap-8 sm:flex-row flex-col-reverse">
+                    <div  className="flex-1 ">
+                        <div className="hidden md:flex mb-10 max-w-3xl">
+                            <h2 className="text-4xl sm:text-5xl font-semibold text-ink">{t('description.title')}</h2>
+                        </div>
+                        <div className="space-y-4 mb-8 text-ink/70 leading-relaxed">
                             {paragraphs.map((paragraph, index) => (
                                 <p key={index}>{paragraph}</p>
                             ))}
@@ -40,11 +46,11 @@ const Description = (): JSX.Element => {
 
                     <div
                         // ref={rightRef}
-                        className="rounded-[1.75rem] flex-1 overflow-hidden border border-sand-200 bg-sand-50 shadow-soft"
+                        className="rounded-[1.75rem] md:max-h-full flex-1 min-h-0 overflow-hidden border border-sand-200 bg-sand-50 shadow-soft"
                         // style={rightMaxHeight ? {maxHeight: `${rightMaxHeight}px`} : undefined}
                     >
                         <img src={'/dominik.webp'} alt={t('description.imageAlt')}
-                             className="w-full h-full object-cover block min-h-[26rem]"
+                             className="w-full h-full  object-cover block min-h-[26rem]"
 
                         />
 
