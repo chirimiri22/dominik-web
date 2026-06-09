@@ -3,7 +3,7 @@ import { AtSymbolIcon, PhoneIcon } from '@heroicons/react/24/solid'
 
 const Contact: React.FC = () => {
   const { t } = useI18n()
-  const email = 'pokor.domo@seznam.cz'
+  const email = 'dominik.masaz@seznam.cz'
   const phone = '+420 731 345 567'
 
   return (
