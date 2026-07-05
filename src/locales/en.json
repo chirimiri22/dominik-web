@@ -3,14 +3,15 @@
     "location": "Prague",
     "locationShort": "Prague",
     "badge": "Mobile masseur",
-    "title": "Masáže Pokorný",
+    "title": "Pokorný Massage",
     "subtitle": [
-      "Do you long to experience true relaxation and relief?",
-      "Do you want to switch off everything around you for a moment?",
-      "To simply exist for a while?"
+      "to experience true relaxation and relief...",
+      "to switch off everything around you for a moment...",
+      "to simply exist for a while..."
     ],
     "cta": "Find a time",
-    "note": "I come to your home and create a space for real relaxation."
+    "note1": "I come to your home and create a space",
+    "note2": "for real relaxation."
   },
   "gallery": {
     "tag": "Portfolio",
@@ -57,13 +58,15 @@
     "subtitle": "Traditional Finnish massage at the intensity you prefer — gentle and relaxing or very deep.",
     "servicesSubtitle": "I offer",
     "variantsSubtitle": "Available options",
-    "badgeRecommended": "Most popular",
+    "badgeRecommended": "Popular",
+    "readMore": "Show more",
+    "readLess": "Show less",
     "services": [
       {
         "title": "Finnish massage",
         "paragraphs": [
           "Traditional Finnish massage at the intensity you prefer.",
-          "It can be very gentle and relaxing, or very intense — everything depends on what you want."
+          "It can be very gentle and relaxing, or very intense - everything depends on what you want."
         ]
       },
       {
@@ -82,26 +85,33 @@
       }
     ],
     "tiers": {
+      "short": {
+        "title": "Quick massage",
+        "shortTitle": "Quick",
+        "price": 1400,
+        "duration": "30 minutes",
+        "advantage": "The best short time slot to restore energy with the help of cupping. A great option for people looking for a quick relaxation and refresh during a busy week."
+      },
       "basic": {
         "title": "Shortened massage",
-        "shortTitle": "Shortened",
-        "price": 1000,
+        "shortTitle": "Short",
+        "price": 2200,
         "duration": "60 minutes",
-        "advantage": "Quick relief for a busy day."
+        "advantage": "A great opportunity to quickly relieve sore, stiff back and neck in the middle of a busy week."
       },
       "pro": {
         "title": "Standard massage",
         "shortTitle": "Standard",
-        "price": 1400,
+        "price": 2800,
         "duration": "90 minutes",
-        "advantage": "More time for deeper work and longer-lasting relief."
+        "advantage": "Deep muscle release for the areas that trouble you most from sitting at a computer, plus a mental unwind from work worries and deep relaxation."
       },
       "deluxe": {
-        "title": "Full-body Deluxe massage",
-        "shortTitle": "Deluxe",
-        "price": 4500,
+        "title": "Full-body Premium massage",
+        "shortTitle": "Premium",
+        "price": 6555,
         "duration": "150 minutes",
-        "advantage": "Ideal as a gift if you want to treat someone to a real experience. A thorough deep full-body massage tailored to your preferences.\nAs a lover of good food, this package also includes exclusive refreshments and drinks throughout the session."
+        "advantage": "<p class='mb-4'>An ideal gift if you want to reward someone, give them a genuine experience, and introduce them to a healthy lifestyle that doesn't end with this massage. It will help them embark on a new, healthier chapter in life.</p>\n<p class='mb-4'>A thorough deep full-body massage tailored to your preferences — an experience you won't forget.</p>\n<p>In addition to an excellent massage, this package includes various bonuses, for example:</p>\n<ul class='ml-6 mt-2 space-y-1 list-disc list-inside'>\n<li>Practical extras that make a healthy lifestyle accessible exactly where you are in life and with what you are currently doing.</li>\n<li>A special heated table during the entire procedure to provide pleasant warmth where you are not being massaged.</li>\n<li>Cooling and warming compresses — heat for deep release, cold targeted where calming an acute irritation is needed.</li>\n<li>Premium refreshments that taste great and help the body replenish important nutrients and minerals used during the massage.</li>\n</ul>\n<div class='mt-4 p-3 rounded bg-yellow-200 border-l-4 border-yellow-600 text-yellow-900 font-semibold'>\n<strong>Notice:</strong> The Premium massage must be booked at least one week in advance, or arranged by phone at <a href='tel:731345567' class='underline'>731 345 567</a>.\n</div>"
       },
       "button": "Select",
       "selected": "Selected",
@@ -183,6 +193,14 @@
         "answer": "For personal reasons, my clientele is set exclusively to men."
       },
       {
+        "question": "Does it matter if I'm gay?",
+        "answer": "Your sexual orientation is not an obstacle for the massage."
+      },
+      {
+        "question": "Do you massage intimate areas?",
+        "answer": "No, this is not part of any full-body massage. I do not provide erotic services."
+      },
+      {
         "question": "Does it hurt?",
         "answer": [
           "It depends on our agreement and your expectations.",
@@ -216,6 +234,11 @@
       {
         "quote": "Dominik has a very professional and personal approach. I had extremely stiff muscles around my spine due to work and almost daily gym. After a thorough and careful massage, there was huge relief. He was precise and hit exactly the spots that needed to be released. Maximum satisfaction.",
         "name": "Aleš P.",
+        "role": "Client"
+      },
+      {
+        "quote": "Dominik approaches a relaxing massage in a very holistic way. The massage duration doesn’t count just from entering the apartment to leaving - he first creates a pleasant atmosphere with tea, candles, and a friendly conversation. During the massage he continuously checks your comfort and the relaxing treatment isn’t interrupted by small talk about the weather or politics. I truly had the chance to disconnect from work and everyday stress and simply be present for a moment. Thank you! 🙏",
+        "name": "Marek Š.",
         "role": "Client"
       }
     ]

@@ -68,10 +68,12 @@ const TierCard: React.FC<{tier: string, special?: boolean, styles?: string, noTi
                 <button
                     onClick={() => setIsExpanded(v => !v)}
                     aria-expanded={isExpanded}
-                    className="absolute left-1/2 transform -translate-x-1/2 bottom-4 z-10 inline-flex items-center justify-center rounded-full bg-white/90 px-3 py-1 text-sm font-semibold shadow transition-transform"
-                    aria-label={isExpanded ? 'Skrýt' : 'Zobrazit více'}
+                    className="absolute left-1/2 transform -translate-x-1/2 bottom-4 z-10 inline-flex items-center justify-center rounded-full bg-clay-600 text-white w-8 h-8 p-1 shadow transition-transform"
+                    aria-label={isExpanded ? t('pricing.readLess') : t('pricing.readMore')}
                 >
-                    {isExpanded ? 'Zobrazit méně' : 'Zobrazit více'}
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" className={`w-5 h-5 transform ${isExpanded ? 'rotate-180' : ''}`}>
+                        <polyline points="6 9 12 15 18 9" />
+                    </svg>
                 </button>
             )}
         </article>

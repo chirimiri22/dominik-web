@@ -1,5 +1,5 @@
 import React from 'react'
-import {motion, useReducedMotion, AnimatePresence} from 'framer-motion'
+import {motion, useReducedMotion} from 'framer-motion'
 import {useI18n} from '../i18n'
 import {MapPinIcon} from '@heroicons/react/24/solid'
 import Badge from './Badge'
@@ -11,17 +11,61 @@ const Intro: React.FC<Props> = () => {
     const subtitle = t('intro.subtitle') as string | string[]
     const subtitleLines = Array.isArray(subtitle) ? subtitle : [subtitle]
 
-    // Show one subtitle line at a time for 3 seconds. Respect reduced-motion.
+    // Typing effect for subtitle. Respect reduced-motion.
     const reduced = useReducedMotion()
     const [visibleIndex, setVisibleIndex] = React.useState(0)
+    const [displayText, setDisplayText] = React.useState('')
+    const [isDeleting, setIsDeleting] = React.useState(false)
+    const displayRef = React.useRef('')
 
     React.useEffect(() => {
-        if (reduced || subtitleLines.length <= 1) return
-        const id = setInterval(() => {
-            setVisibleIndex(i => (i + 1) % subtitleLines.length)
-        }, 6000)
-        return () => clearInterval(id)
-    }, [subtitleLines.length, reduced])
+        if (reduced || subtitleLines.length === 0) {
+            setDisplayText(subtitleLines[0] || '')
+            displayRef.current = subtitleLines[0] || ''
+            return
+        }
+
+        let timeoutId: number | undefined
+        const fullText = subtitleLines[visibleIndex]
+        const typingSpeed = 60
+        const deletingSpeed = 40
+        const pauseAfterFull = 3000
+        const pauseBeforeType = 300
+
+        const tick = () => {
+            const current = displayRef.current
+            if (!isDeleting) {
+                const next = fullText.slice(0, current.length + 1)
+                displayRef.current = next
+                setDisplayText(next)
+                if (next === fullText) {
+                    timeoutId = window.setTimeout(() => setIsDeleting(true), pauseAfterFull) as unknown as number
+                } else {
+                    timeoutId = window.setTimeout(tick, typingSpeed) as unknown as number
+                }
+            } else {
+                const next = fullText.slice(0, Math.max(0, current.length - 1))
+                displayRef.current = next
+                setDisplayText(next)
+                if (next === '') {
+                    timeoutId = window.setTimeout(() => {
+                        setIsDeleting(false)
+                        setVisibleIndex(i => (i + 1) % subtitleLines.length)
+                    }, pauseBeforeType) as unknown as number
+                } else {
+                    timeoutId = window.setTimeout(tick, deletingSpeed) as unknown as number
+                }
+            }
+        }
+
+        // initialize ref
+        displayRef.current = displayText
+        timeoutId = window.setTimeout(tick, 500) as unknown as number
+
+        return () => {
+            if (timeoutId) clearTimeout(timeoutId)
+        }
+    }, [visibleIndex, isDeleting, reduced, subtitleLines])
 
     return (
         <section
@@ -70,23 +114,21 @@ const Intro: React.FC<Props> = () => {
 
                     <div className={"mb-4 sm:mb-8 "}>
                         <span className=" text-sand-100/90 text-sm sm:text-lg">{t('intro.note1')}</span>
-                        <div className="mb-4 sm:mb-8 text-sm sm:text-lg text-white leading-relaxed max-w-2xl">
+                        <div className="mb-4 sm:mb-8 text-sm sm:text-lg text-sand-100/90 leading-relaxed max-w-2xl">
                             {reduced ? (
                                 <p className="m-0">{subtitleLines[0]}</p>
                             ) : (
-                                <AnimatePresence mode="wait">
-                                    <motion.p
-                                        key={visibleIndex}
-                                        initial={{opacity: 0}}
-                                        animate={{opacity: 1}}
-                                        exit={{opacity: 0}}
-                                        transition={{duration: 0.6}}
-                                        className="m-0"
-                                        aria-live="polite"
-                                    >
-                                        {subtitleLines[visibleIndex]}
-                                    </motion.p>
-                                </AnimatePresence>
+                                <>
+                                    <style>{`@keyframes blink{50%{opacity:0}}`}</style>
+                                    <p className="m-0" aria-live="polite">
+                                        {displayText}
+                                        <span
+                                            className="ml-1 inline-block w-0.5 h-5 bg-sand-100"
+                                            style={{animation: 'blink 1300ms steps(1, start) infinite'}}
+                                            aria-hidden
+                                        />
+                                    </p>
+                                </>
                             )}
                         </div>
                     </div>
@@ -97,7 +139,7 @@ const Intro: React.FC<Props> = () => {
                                 behavior: 'smooth',
                                 block: 'start'
                             })}
-                            className="inline-flex items-center justify-center shrink-0 rounded-full bg-clay-500 px-7 py-3 font-semibold text-white shadow-soft transition-all hover:bg-clay-600 hover:-translate-y-0.5"
+                            className="inline-flex items-center sm:text-lg justify-center shrink-0 rounded-full bg-clay-500 px-7 py-3 font-semibold text-white shadow-soft transition-all hover:bg-clay-600 hover:-translate-y-0.5"
                         >
                             {t('intro.cta')}
                         </button>
