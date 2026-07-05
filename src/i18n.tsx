@@ -73,3 +73,17 @@ export const useI18n = (): I18nContextValue => {
   if (!ctx) throw new Error('useI18n must be used within I18nProvider')
   return ctx
 }
+
+export const sanitizeHtml = (input: string) => {
+  if (!input) return input
+  // Convert React-style className attributes to standard HTML class attributes
+  // Example: <p className='foo'> or <div className="bar"> -> <p class="foo"> / <div class="bar">
+  return input.replace(/className=(['"])(.*?)\1/g, (_m, _q, inner) => `class="${inner}"`)
+}
+
+export const Trans: React.FC<{ i18nKey?: string; html?: string; vars?: Record<string, string | number>; className?: string }> = ({ i18nKey, html, vars, className }) => {
+  const { t } = useI18n()
+  const raw = html ?? (i18nKey ? String(t(i18nKey, vars)) : '')
+  const str = sanitizeHtml(raw)
+  return <div className={className} dangerouslySetInnerHTML={{ __html: str }} />
+}

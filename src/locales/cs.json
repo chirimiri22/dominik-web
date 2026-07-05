@@ -2,15 +2,16 @@
   "intro": {
     "location": "Praha a okolí",
     "locationShort": "Praha",
-    "badge": "Mobilní masér",
+    "badge": "Relax u vás doma",
     "title": "Masáže Pokorný",
     "subtitle": [
-      "Máte touhu zažít skutečný relax a úlevu?",
-      "Na chvíli vypnout všechno kolem?",
-      "Na chvíli jen existovat?"
+      "pro skutečný relax a úlevu...",
+      "na chvíli vypnout všechno kolem...",
+      "na chvíli jen existovat..."
     ],
     "cta": "Najít termín",
-    "note": "Přijedu za vámi domů a vytvořím prostor pro skutečné uvolnění."
+    "note1": "Přijedu za vámi domů a vytvořím prostor",
+    "note2": " pro skutečné uvolnění."
   },
   "gallery": {
     "tag": "Portfolio",
@@ -46,8 +47,8 @@
     ],
     "valuesTitle": "Proč si vybrat zrovna mě?",
     "points": [
+      "Přijedu přímo k vám domů, vše zařídím já, nakonec všechno uklidím, dám do původního stavu a odjedu - žádné starosti pro Vás, pouze čistý relax a uvolnění.",
       "Jedu na kvalitu, ne na kvantitu – maximálně dva klienti za den.",
-      "Žádné dlouhé cestování a hledání parkování – přijedu přímo k vám a vše zařídím já.",
       "Masérská péče probíhá podle Vás a tak jak je to příjemné Vám."
     ],
     "text": "Jmenuji se Dominik Pokorný. Jsem osobní masér pro muže a pomáhám lidem vrátit tělu lehkost, pohyb a klid."
@@ -83,26 +84,33 @@
       }
     ],
     "tiers": {
+      "short": {
+        "title": "Rychlá masáž",
+        "shortTitle": "Rychlá",
+        "price": 1400,
+        "duration": "30 minut",
+        "advantage": "Nejlepší časový úsek pro obnovu energie s pomocí baněk. Super možnost pro lidi, co hledají rychlý relax a osvěžení pro svoje tělo v náročném týdnu.  "
+      },
       "basic": {
         "title": "Zkrácená masáž",
         "shortTitle": "Zkrácená",
-        "price": 1000,
+        "price": 2200,
         "duration": "60 minut",
-        "advantage": "Rychlé uvolnění při časově náročném dni."
+        "advantage": "Skvělá příležitost rychle uvolnit bolavá ztuhlá záda a krk uprostřed nabitého týdne."
       },
       "pro": {
         "title": "Standartní masáž",
         "shortTitle": "Standardní",
-        "price": 1400,
+        "price": 2800,
         "duration": "90 minut",
-        "advantage": "Více času na hlubší práci a dlouhodobější úlevu."
+        "advantage": "Hluboké uvolnění svalů, co Vás nejvíc trápí od sezení za počítačem, nebo vypnutí hlavy od všech starostí z práce  a velký relax."
       },
       "deluxe": {
-        "title": "Celotělová masáž Deluxe",
-        "shortTitle": "Deluxe",
-        "price": 4500,
+        "title": "Celotělová masáž Premium",
+        "shortTitle": "Premium",
+        "price": 6555,
         "duration": "150 minut",
-        "advantage": "Ideální dárek, pokud chcete někoho ocenit a věnovat mu opravdový zážitek. Důkladná hloubková masáž celého těla podle Vašich preferencí.\nJelikož jsem milovník dobrého jídla, nechybí v tomto balíčku ani exkluzivní občerstvení a nápoje po celou dobu procedury."
+        "advantage": "<p class='mb-4'>Ideální dárek, pokud chcete někoho ocenit, věnovat mu opravdový zážitek a zpřístupnit mu zdravý životní styl, který touto masáží neskončí. Naopak to bude odrazový můstek pro novou zdravější etapu jejich života.</p>\n<p class='mb-4'>Důkladná hloubková masáž celého těla podle Vašich preferencí, na kterou nezapomenete.</p>\n<p>Kromě skvělé masáže obsahuje tento balíček i nejrůznější bonusy, například:</p>\n<ul class='ml-6 mt-2 space-y-1 list-disc list-inside'>\n<li>Praktické doplňky, které udělají zdravý životní styl přístupný přesně tam, kde teď v životě jste a s tím, co zrovna děláte.</li>\n<li>Speciální vyhřívané lehátko po celou dobu procedury, které bude příjemně hřát tam, kde se zrovna nemasíruje.</li>\n<li>Chladivé i hřejivé obklady – teplo pro hloubkové uvolnění, chlad cíleně tam, kde je potřeba zklidnit akutní podráždění.</li>\n<li>Prémiové občerstvení, které bude skvěle chutnat a zároveň pomůže tělu načerpat všechny důležité látky a minerály, které se během masáže spotřebují.</li>\n</ul>\n<div class='mt-4 p-3 rounded bg-yellow-200 border-l-4 border-yellow-600 text-yellow-900 font-semibold'>\n<strong>Upozornění:</strong> Masáž Premium lze objednat nejpozději týden dopředu před termínem nebo po telefonické komunikaci na čísle <a href='tel:731345567' class='underline'>731 345 567</a>.\n</div>"
       },
       "button": "Vybrat",
       "selected": "Vybráno",
@@ -184,6 +192,14 @@
         "answer": "Z osobních důvodů mám klientelu nastavenou výhradně na muže."
       },
       {
+        "question": "Vadí, že jsem gay?",
+        "answer": "Vaše orientace pro masáž není překážkou."
+      },
+      {
+        "question": "Masírujete i intimní partie?",
+        "answer": "Ne, není to součást ani celotělové masáže. Neposkytuji ani jiné erotické služby."
+      },
+      {
         "question": "Bolí to?",
         "answer": [
           "Záleží na domluvě a vašich očekáváních.",
@@ -194,7 +210,7 @@
         "question": "Jak to probíhá?",
         "answer": [
           "Přijedu k vám domů (nebo do vašeho prostředí), přivezu vše potřebné a vytvořím zónu klidu přímo tam, kde se běžně pohybujete.",
-          "Součástí vybavení je vyhřívaná podložka, nahřívač oleje, vonné svíčky i relaxační čaj.",
+          "Součástí vybavení je nahřívač oleje, vonné svíčky i relaxační čaj.",
           "Po krátké domluvě proběhne masáž, potom vše sbalím a vy můžete pokračovat v odpočinku. Následující den doporučuji klidnější režim bez náročné fyzické zátěže."
         ]
       },
@@ -217,6 +233,11 @@
       {
         "quote": "Dominik má velmi profesionální a osobitý přístup. Měl jsem extrémně ztuhlé svaly kolem páteře kvůli práci a skoro dennímu gymu. Po důkladné a pečlivé masáži přišla obrovská úleva. Byl precizní a trefil přesně místa, která potřebovala uvolnit. Maximální spokojenost.",
         "name": "Aleš P.",
+        "role": "Klient"
+      },
+      {
+        "quote": "Dominik umí relaxační masáž pojmout opravdu ze široka. Trvání masáže nepočítá od vstupu do bytu až po jeho opuštění. Když přijde, navodí nejprve příjemnou atmosféru - čaj, svíčky, milá konverzace. V průběhu masáže stále ověřuje míru pohodlí a relaxační masáž nenarušuje konverzací o počasí nebo politice. Měl jsem skutečně možnost odpoutat se od práce a každodenního stresu a být chvíli jen tady a teď. Děkuju! \uD83D\uDE4F",
+        "name": "Marek Š.",
         "role": "Klient"
       }
     ]

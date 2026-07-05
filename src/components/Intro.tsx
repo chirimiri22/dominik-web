@@ -67,24 +67,28 @@ const Intro: React.FC<Props> = () => {
                     </div>
                     <h1 className="text-3xl sm:text-5xl lg:text-6xl font-semibold leading-tight mb-3 sm:mb-5">{t('intro.title')}</h1>
 
-                    <div className="mb-4 sm:mb-8 text-sm sm:text-xl text-sand-100/90 leading-relaxed max-w-2xl">
-                        {reduced ? (
-                            <p className="m-0">{subtitleLines[0]}</p>
-                        ) : (
-                            <AnimatePresence mode="wait">
-                                <motion.p
-                                    key={visibleIndex}
-                                    initial={{opacity: 0}}
-                                    animate={{opacity: 1}}
-                                    exit={{opacity: 0}}
-                                    transition={{duration: 0.6}}
-                                    className="m-0"
-                                    aria-live="polite"
-                                >
-                                    {subtitleLines[visibleIndex]}
-                                </motion.p>
-                            </AnimatePresence>
-                        )}
+
+                    <div className={"mb-4 sm:mb-8 "}>
+                        <span className=" text-sand-100/90 text-sm sm:text-lg">{t('intro.note1')}</span>
+                        <div className="mb-4 sm:mb-8 text-sm sm:text-lg text-white leading-relaxed max-w-2xl">
+                            {reduced ? (
+                                <p className="m-0">{subtitleLines[0]}</p>
+                            ) : (
+                                <AnimatePresence mode="wait">
+                                    <motion.p
+                                        key={visibleIndex}
+                                        initial={{opacity: 0}}
+                                        animate={{opacity: 1}}
+                                        exit={{opacity: 0}}
+                                        transition={{duration: 0.6}}
+                                        className="m-0"
+                                        aria-live="polite"
+                                    >
+                                        {subtitleLines[visibleIndex]}
+                                    </motion.p>
+                                </AnimatePresence>
+                            )}
+                        </div>
                     </div>
                     <div className="flex flex-col sm:flex-row sm:items-center gap-4 justify-start">
                         <button
@@ -97,7 +101,7 @@ const Intro: React.FC<Props> = () => {
                         >
                             {t('intro.cta')}
                         </button>
-                        <span className=" text-sm text-sand-100/80">{t('intro.note')}</span>
+
                     </div>
                 </div>
             </motion.div>
