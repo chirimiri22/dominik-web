@@ -74,11 +74,13 @@ export const useI18n = (): I18nContextValue => {
   return ctx
 }
 
+// TODO refactor - this is not working well
 export const sanitizeHtml = (input: string) => {
-  if (!input) return input
-  // Convert React-style className attributes to standard HTML class attributes
-  // Example: <p className='foo'> or <div className="bar"> -> <p class="foo"> / <div class="bar">
-  return input.replace(/className=(['"])(.*?)\1/g, (_m, _q, inner) => `class="${inner}"`)
+  return input
+    .replace(/<p className='mb-4 font-semibold'>/g, '<p class="mb-4 font-semibold">')
+    .replace(/<ol className='space-y-3 list-decimal list-inside'>/g, '<ol class="space-y-3 list-decimal list-inside">')
+    .replace(/<ul className='ml-6 mt-2 space-y-1 list-disc list-inside'>/g, '<ul class="ml-6 mt-2 space-y-1 list-disc list-inside">')
+    .replace(/<p className='mt-6 pt-4 border-t border-sand-200 text-sm italic'>/g, '<p class="mt-6 pt-4 border-t border-sand-200 text-sm italic">')
 }
 
 export const Trans: React.FC<{ i18nKey?: string; html?: string; vars?: Record<string, string | number>; className?: string }> = ({ i18nKey, html, vars, className }) => {
