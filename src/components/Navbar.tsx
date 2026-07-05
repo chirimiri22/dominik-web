@@ -32,6 +32,7 @@ const Navbar = (): JSX.Element => {
     { id: 'description', label: String(t('nav.description')) },
       { id: 'gallery', label: String(t('nav.gallery')) },
       { id: 'pricing', label: String(t('nav.pricing')) },
+      { id: 'guarantee', label: String(t('nav.guarantee')) },
     { id: 'contact', label: String(t('nav.contact')) },
     { id: 'faq', label: String(t('nav.faq')) },
     { id: 'testimonials', label: String(t('nav.testimonials')) },

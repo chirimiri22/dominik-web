@@ -167,6 +167,7 @@
     "description": "O mně",
     "pricing": "Ceník",
     "contact": "Kontakt",
+    "guarantee": "Moje garance",
     "faq": "FAQ",
     "testimonials": "Reference"
   },
@@ -222,6 +223,38 @@
       }
     ]
   },
+  "guarantee": {
+      "title": "Moje garance",
+      "items": [
+        {
+          "question": "Něco Vám vlétlo do domluveného termínu masáže?",
+          "answer": [
+            "Flexibilita není problém. Přehození termínu na jindy <b>8 hodin dopředu naprosto zdarma</b>."
+
+          ]
+        },
+        {
+          "question": "Bojíte se, že Vám masáž nepomůže?",
+          "answer": [
+            "Garantuji, že pokud <b>do 72 hodin od masáže neucítíte žádnou úlevu</b> ani žádné povolení svalů, <b>vrátím vám 75 % ceny</b>.",
+            "Garance se nevztahuje, pokud Vás trápí problém, se kterými Vám nabízené služby pomoct nemohou (např. problémy co se týkají fyzioterapie, neurologie nebo jiné odborné pomoci a přesahují základní působnost maséra.)"
+          ]
+        },
+        {
+          "question": "Bojíte se, že ztratíte čas?",
+          "answer": [
+            "Garantuji Vám, že <b>přijedu včas</b> a pokud se opozdím s příjezdem <b>o více než 25 minut, masáž je za 50% ceny."
+          ]
+        },
+        {
+          "question": "Bojíte se, že nevíte jak bude masáž probíhat?",
+          "answer": [
+            "Ve zkratce a zároveň naprosté výstižnosti to bude probíhat takto:",
+            "<ol class='list-decimal list-inside space-y-2'><li><b>Přijedu za Vámi</b> na adresu, případně na jiné místo, na kterém se domluvíme a vše si přivezu s sebou.</li><li>Uděláme spolu <b>rychlý vstupní rozhovor</b>, abych zjistil, jaký styl masáže pro Vás bude nejvhodnější, jaké jsou <b>Vaše preference</b> a jestli nemáte žádné <b>zdravotní důvody</b>, proč bychom masáž měli přesunout na jindy.</li><li><b>Provedeme spolu masáž podle Vašeho přání a Vašich časových možností</b> a budete mít dostatek času si užít masáž včetně času na konci na poležení a vydýchání.</li><li><b>Zhodnotíme</b> spolu celé setkání, uklidím a odjedu domů.</li><li>Vy můžete <b>začít relaxovat</b> a jít rovnou spát, nebo si užívat rozvolněného těla.</li></ol>"
+          ]
+        }
+      ]
+    },
   "testimonials": {
     "title": "Reference",
     "heading": "Co o masáži říkají klienti",

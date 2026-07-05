@@ -165,6 +165,7 @@
     "gallery": "Gallery",
     "description": "About me",
     "pricing": "Pricing",
+    "guarantee": "Guarantee",
     "contact": "Contact",
     "faq": "FAQ",
     "testimonials": "Testimonials"
@@ -218,6 +219,37 @@
       {
         "question": "Why should I book your services?",
         "answer": "Because I focus on quality, not quantity. My limit is two clients per day so I can give each one maximum care — and everything happens at your home without unnecessary travel."
+      }
+    ]
+  },
+  "guarantee": {
+    "title": "My guarantee",
+    "items": [
+      {
+        "question": "Something came up and you need to change the appointment?",
+        "answer": [
+          "Flexibility is not a problem. Rescheduling up to 8 hours before the appointment is completely free."
+        ]
+      },
+      {
+        "question": "Worried the massage won't help?",
+        "answer": [
+          "I guarantee that if within 72 hours after the massage you feel no relief or muscle release, I will refund 75% of the price.",
+          "This guarantee does not apply to issues that the offered services cannot address (e.g., conditions requiring physiotherapy, neurology, or other specialist care that go beyond the basic scope of a masseur)."
+        ]
+      },
+      {
+        "question": "Worried you'll waste your time?",
+        "answer": [
+          "I guarantee I will arrive on time, and if I am more than 25 minutes late, the massage is 50% off."
+        ]
+      },
+      {
+        "question": "Worried about how the massage will proceed?",
+        "answer": [
+          "In short — and with absolute clarity — this is how it will proceed:",
+          "<ol class='list-decimal list-inside space-y-2'><li>I will come to your address or another agreed location and bring everything with me.</li><li>We'll do a quick intake conversation to find the massage style that suits you, your preferences, and to check for any health reasons to reschedule.</li><li>We'll perform the massage according to your wishes and time constraints, giving you enough time at the end to lie down and catch your breath.</li><li>We'll review the session together, I'll tidy up and leave.</li><li>You can begin to relax, go straight to sleep, or enjoy your released body.</li></ol>"
+        ]
       }
     ]
   },

@@ -5,6 +5,7 @@ import Gallery from './components/Gallery'
 import Description from './components/Description'
 import Pricing from './components/Pricing'
 import Contact from './components/Contact'
+import Guarantee from './components/Guarantee'
 import Faq from './components/Faq'
 import Testimonials from './components/Testimonials'
 import Navbar from './components/Navbar'
@@ -19,10 +20,11 @@ const Home = () => (
       <Description />
     <Gallery />
     <Pricing />
-    <Contact />
-    <Faq />
-    <Testimonials />
-    <Footer />
+  <Guarantee />
+  <Contact />
+  <Faq />
+  <Testimonials />
+  <Footer />
   </main>
 )
 
