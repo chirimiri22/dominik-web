@@ -81,7 +81,7 @@ const TierCard: React.FC<{tier: string, special?: boolean, styles?: string, noTi
 }
 
 
-const Pricing: React.FC = () => {
+const Pricing: React.FC<{closePrompt: () => void }>= ({closePrompt}) => {
     const {t} = useI18n()
     const rawServices = t('pricing.services')
     const services: ServiceDetail[] = Array.isArray(rawServices)
@@ -100,7 +100,7 @@ const Pricing: React.FC = () => {
 
     const BasicTier: React.FC = () => <TierCard tier={"basic"} styles={"flex-1 border-sand-200"}  />
     const ProTier: React.FC = () => <TierCard tier={"pro"} special styles={"flex-1 border-2 border-accent-yellow"}   />
-    const DeluxeTier: React.FC = () => <TierCard tier={"deluxe"} styles={"md:max-w-[50%] border-sand-200"} noTime/>
+    const DeluxeTier: React.FC = () => <TierCard tier={"deluxe"} styles={"md:max-w-[50%] border-sand-200"}/>
 
 
     const [isExpanded, setIsExpanded] = useState<boolean>(false)
@@ -167,10 +167,12 @@ const Pricing: React.FC = () => {
                 <div className="mt-8 flex flex-col items-center gap-3">
                     <div className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto justify-center">
                         <button
+                            id={isMobile ? "calendar" : undefined}
                             type="button"
                             className="sm:hidden block rounded-full bg-clay-500 px-9 py-4 text-lg font-semibold text-white shadow-soft transition-colors hover:bg-clay-600"
                             onClick={() => {
                                 if (isMobile) {
+                                    closePrompt()
                                     setIsModalOpen(true)
                                 } else {
                                     setIsExpanded((prev) => !prev)
@@ -216,8 +218,9 @@ const Pricing: React.FC = () => {
             </div>
             {/* Inline iframe for large screens only */}
             {!isMobile && (
-                <div className="mx-auto mt-4 max-w-screen-xl px-6 lg:px-12 h-[88vh]">
+                <div id={"calendar"} className="mx-auto mt-4 max-w-screen-xl px-6 lg:px-12 h-[88vh]">
                     <iframe
+
                         src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2JNtcZkXOdcRq_3KKjzjCvf1wgs3uAJ8WPi2wdzpMhiozy4AsSIsQk7pZPf1AMWF4MhnFaDPGZ?gv=true"
                         width="100%"
                         title={t('booking.title')}
@@ -228,7 +231,7 @@ const Pricing: React.FC = () => {
 
             {/* Modal for mobile only */}
             {isMobile && isModalOpen && (
-                <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
+                <div id={"calendar"} className="fixed inset-0 z-50 flex items-center justify-center bg-black/60 backdrop-blur-sm">
                     <div className="relative w-full h-full flex items-center justify-center">
                         <div className="relative w-full h-full max-w-3xl max-h-[90vh] rounded-[1.25rem] border border-sand-200 bg-white shadow-2xl flex items-start">
                             <button

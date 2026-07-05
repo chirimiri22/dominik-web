@@ -111,7 +111,7 @@
         "title": "Celotělová masáž Premium",
         "shortTitle": "Premium",
         "price": 6555,
-        "duration": "150 minut",
+        "duration": "120 minut",
         "advantage": "<p class='mb-4'>Ideální dárek, pokud chcete někoho ocenit, věnovat mu opravdový zážitek a zpřístupnit mu zdravý životní styl, který touto masáží neskončí. Naopak to bude odrazový můstek pro novou zdravější etapu jejich života.</p>\n<p class='mb-4'>Důkladná hloubková masáž celého těla podle Vašich preferencí, na kterou nezapomenete.</p>\n<p>Kromě skvělé masáže obsahuje tento balíček i nejrůznější bonusy, například:</p>\n<ul class='ml-6 mt-2 space-y-1 list-disc list-inside'>\n<li>Praktické doplňky, které udělají zdravý životní styl přístupný přesně tam, kde teď v životě jste a s tím, co zrovna děláte.</li>\n<li>Speciální vyhřívané lehátko po celou dobu procedury, které bude příjemně hřát tam, kde se zrovna nemasíruje.</li>\n<li>Chladivé i hřejivé obklady – teplo pro hloubkové uvolnění, chlad cíleně tam, kde je potřeba zklidnit akutní podráždění.</li>\n<li>Prémiové občerstvení, které bude skvěle chutnat a zároveň pomůže tělu načerpat všechny důležité látky a minerály, které se během masáže spotřebují.</li>\n</ul>\n<div class='mt-4 py-3 rounded bg-yellow-200 border-l-4 border-yellow-600 text-yellow-900 font-semibold'>\n<strong>Upozornění:</strong> Masáž Premium lze objednat nejpozději týden dopředu před termínem nebo po telefonické komunikaci na čísle <a href='tel:731345567' class='underline'>731 345 567</a>.\n</div>"
       },
       "button": "Vybrat",
@@ -280,5 +280,13 @@
   "footer": {
     "copyright": "© {year} Dominik",
     "credit": "Vytvořeno s ❤️"
+  },
+  "app": {
+    "prompt": {
+      "question": "Najděte svůj termín!",
+      "subtitle": "Podívejte se do mého kalendáře a vyberte si termín, který vám vyhovuje.",
+      "cta": "Najít termín",
+      "close": "Zavřít"
+    }
   }
 }
