@@ -57,7 +57,7 @@ const App: React.FC = () => {
   useEffect(() => {
     let timer: number | undefined
 
-      timer = window.setTimeout(() => setShowPrompt(true), 1)
+      timer = window.setTimeout(() => setShowPrompt(true), 15000)
 
     return () => {
       if (timer !== undefined) clearTimeout(timer)
